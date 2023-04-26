@@ -1,0 +1,22 @@
+{
+    "Header":{
+        "0":"Ijtimoiy tarmoqdagi sahifalarimiz:",
+        "1": "Buyurtma asosida tayyorlash",
+        "2": "Logotip tushirish",
+        "3": "Biz haqimizda",
+        "4": "Biz bilan bog’lanish"
+    },
+    "Footer":{
+        "0": "Saytda ko'rsatilgan tovarlarning xususiyatlari, ranglari va jihozlari haqiqiydan farq qilishi mumkin.",
+        "1": "Bosh sahifa",
+        "2": "Buyurtma qoldirish",
+        "3": "Logotip tushirish",
+        "4": "Biz haqimizda",
+        "5": "Biz bilan bog’lanish",
+        "6": "Telefon raqamlarimiz:",
+        "7": "Manzilimiz:",
+        "8": "Toshkent shahri, Yakkasaroy tumani, Hamid Olimjon ko’cha 45-uy",
+        "9": "Ish vaqtimiz:",
+        "10": "Har kuni 09:00 dan 20:00 gacha"
+    }
+}

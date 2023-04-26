@@ -1,0 +1,59 @@
+.links > p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Rubik";
+}
+
+.links {
+  position: relative;
+}
+
+.active > p {
+  border-bottom: 4px solid #fff !important;
+  /* position: relative; */
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Rubik";
+}
+
+.links::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  height: 2px;
+  background-color: #fff;
+  bottom: -5px;
+  border-radius: 50px;
+  transition: 0.9s transform;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.links:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* .active > p::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    height: 2px;
+    background-color: #fff;
+    bottom: -5px;
+    border-radius: 50px;
+    transition: 0.9s transform;
+  } */
