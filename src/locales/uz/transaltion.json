@@ -1,22 +1,59 @@
 {
-    "Header":{
-        "0":"Ijtimoiy tarmoqdagi sahifalarimiz:",
-        "1": "Buyurtma asosida tayyorlash",
-        "2": "Logotip tushirish",
-        "3": "Biz haqimizda",
-        "4": "Biz bilan bog’lanish"
-    },
-    "Footer":{
-        "0": "Saytda ko'rsatilgan tovarlarning xususiyatlari, ranglari va jihozlari haqiqiydan farq qilishi mumkin.",
-        "1": "Bosh sahifa",
-        "2": "Buyurtma qoldirish",
-        "3": "Logotip tushirish",
-        "4": "Biz haqimizda",
-        "5": "Biz bilan bog’lanish",
-        "6": "Telefon raqamlarimiz:",
-        "7": "Manzilimiz:",
-        "8": "Toshkent shahri, Yakkasaroy tumani, Hamid Olimjon ko’cha 45-uy",
-        "9": "Ish vaqtimiz:",
-        "10": "Har kuni 09:00 dan 20:00 gacha"
-    }
+  "Header": {
+    "0": "Ijtimoiy tarmoqdagi sahifalarimiz:",
+    "1": "Buyurtma asosida tayyorlash",
+    "2": "Logotip tushirish",
+    "3": "Biz haqimizda",
+    "4": "Biz bilan bog’lanish"
+  },
+  "Category": {
+    "0": "Bo’limlar",
+    "1": "Kombizonlar",
+    "2": "Oyoq kiyimlar",
+    "3": "Shlemlar",
+    "4": "Qo’l himoya uchun",
+    "5": "Tibbiyot kiyimlari",
+    "6": "Xarbiy kiyimlar",
+    "7": "Niqoblar",
+    "8": "Trikodaj mahsulotlar"
+  },
+  "Footer": {
+    "0": "Saytda ko'rsatilgan tovarlarning xususiyatlari, ranglari va jihozlari haqiqiydan farq qilishi mumkin.",
+    "1": "Bosh sahifa",
+    "2": "Buyurtma qoldirish",
+    "3": "Logotip tushirish",
+    "4": "Biz haqimizda",
+    "5": "Biz bilan bog’lanish",
+    "6": "Telefon raqamlarimiz:",
+    "7": "Manzilimiz:",
+    "8": "Toshkent shahri, Yakkasaroy tumani, Hamid Olimjon ko’cha 45-uy",
+    "9": "Ish vaqtimiz:",
+    "10": "Har kuni 09:00 dan 20:00 gacha",
+    "11": "Buyurtma qoldirish",
+    "12": "Ismingizni qoldiring",
+    "13": "Telefon raqamingiz",
+    "14": "Buyurtma qoldirish",
+    "15": "Karta orqali ochish"
+  },
+  "Home": {
+    "0": "Himoya shlemlari  >",
+    "1": "Ish qo’lqoplari  >",
+    "2": "Mahsus kiyimlar  >",
+    "3": "Xavfsizlik poyabzali  >",
+    "4": "Shaxsiy himoya vositalari  >",
+    "5": "Aksessuarlar >",
+    "6": "Bizni tanlashingizga sabab",
+    "7": "Barchasi bir joydan",
+    "8": "O’zingizga kerak bo’ladigan barcha mahsulotlarni barchasini bir joydan topa olasiz!",
+    "9": "Eng yaxshi narxlar",
+    "10": "Tezkor yetkazib berish",
+    "11": "24/7 yordam xizmati",
+    "12": "Mashhur mahsulotlar",
+    "13": "Bizning mahsulotlar",
+    "14": "Mahsulotlarga logotip tushirish",
+    "15": "Endi siz o’z brendinggizni mahsulotlaringizga logo tushirgan holatda rivojlantiring! Bu borada biz sizga yordam beramiz. Endi siz o’z brendinggizni mahsulotlaringizga logo tushirgan holatda rivojlantiring! Bu borada biz sizga yordam beramiz.",
+    "16": "Buyurtma asosida kiyim tayyorlash",
+    "17": "Biz sizning shaxsiy buyurtmalaringiz bo'yicha mahsulotlarni ranglar va ishlatiladigan materiallarga bo'lgan istaklarni inobatga olgan holda tikamiz. Biz buyurtma berish uchun ish kiyimlarini tikishga tayyormiz va sizga 100% sifat kafolati beramiz!",
+    "18": "Batafsil ma’lumot"
+  }
 }

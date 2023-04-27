@@ -1,0 +1,22 @@
+.homecomp_wrapper {
+  padding: 183px 0 10px 0;
+  overflow-y: hidden;
+}
+.chooseBg {
+  background-image: url("../../assets/home/homebg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-position-y: 330px;
+  background-position-x: -450px;
+}
+@media only screen and (max-width: 1024px) {
+  .chooseBg {
+    background-image: url("../../assets/home/homebg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-position-y: 30px;
+    background-position-x: 0;
+  }
+}

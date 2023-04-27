@@ -6,6 +6,12 @@ export const WrapperContainer = styled.div`
   margin: 0 auto;
 `;
 
+
+export const BigContainer = styled.div`
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+`;
 export const GlobalStyle = createGlobalStyle`
 
   html{

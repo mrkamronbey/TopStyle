@@ -1,0 +1,26 @@
+.inputdiv {
+  display: flex;
+  flex-direction: column;
+}
+.inputdiv p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: #1f1f1f;
+}
+.inputdiv input {
+  position: relative;
+  border-radius: 7px;
+  padding: 11px 10px;
+  outline: none;
+  border: 1px solid #cccccc;
+}
+.icons{
+    position: absolute;
+}
+.inputdiv input:focus {
+  border: 1px solid #5778ee;
+}
