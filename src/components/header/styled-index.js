@@ -1,6 +1,7 @@
 import styled from "styled-components";
 export const Wrapper = styled.div`
-position: fixed;
-z-index: 1000;
-width: 100%;
-`
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  overflow-y: hidden !important;
+`;

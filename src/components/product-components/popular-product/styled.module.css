@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: center center;
   background-position-y: 300px;
-  padding: 20px 0;
+  /* padding: 0 0 0 0; */
 }
 .row_wrap {
   width: 72%;
@@ -28,6 +28,7 @@
   align-items: center;
   color: #000000;
   margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .line {

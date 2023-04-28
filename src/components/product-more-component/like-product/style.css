@@ -1,0 +1,47 @@
+/* .slick-slider {
+  width: 100%;
+  overflow: hidden;
+}
+.slick-list {
+  position: relative;
+  display: block !important;
+  width: 100%;
+}
+.slick-slide div {
+  width: auto;
+  margin-right: 10px;
+}
+.slick-slide img {
+  width: calc(100% - 10px) !important;
+} */
+
+/* For the demo */
+.styled_row_wrap__JRYzw .slick-slide div {
+  width: auto;
+  height: 350px;
+  margin-right: 10px;
+  background: #ffffff !important;
+  border: 1px solid #eeeeee;
+  border-radius: 15px;
+}
+.styled_row_wrap__JRYzw .slick-prev,
+.slick-next {
+  z-index: 999 !important;
+}
+.styled_row_wrap__JRYzw .slick-arrow {
+  top: -55px !important;
+  right: 42px !important;
+}
+.styled_row_wrap__JRYzw .slick-prev {
+  top: -55px;
+  left: 300px!important;
+}
+.styled_row_wrap__JRYzw .slick-next {
+  top: -55px !important;
+  right: 42px !important;
+}
+.styled_row_wrap__JRYzw .slick-prev:before,
+.slick-next:before {
+  color: #03544c !important;
+  font-size: 45px !important;
+}

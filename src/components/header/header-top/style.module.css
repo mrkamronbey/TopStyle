@@ -3,6 +3,9 @@
   background: #d9d9d9;
 }
 
+.row{
+  margin: 0 !important;
+}
 .social {
   display: flex;
   align-items: center;

@@ -55,5 +55,18 @@
     "16": "Buyurtma asosida kiyim tayyorlash",
     "17": "Biz sizning shaxsiy buyurtmalaringiz bo'yicha mahsulotlarni ranglar va ishlatiladigan materiallarga bo'lgan istaklarni inobatga olgan holda tikamiz. Biz buyurtma berish uchun ish kiyimlarini tikishga tayyormiz va sizga 100% sifat kafolati beramiz!",
     "18": "Batafsil ma’lumot"
+  },
+  "Products": {
+    "0": "Qishki mahsus kiyimlar",
+    "1": "Mahsulot xususiyatlari:",
+    "2": "Mahsulot turi: _ _ _ _ _ _ _",
+    "3": "To'liqlik: _ _ _ _ _ _ _ _ _ _ ",
+    "4": "Mo'ljal:_ _ _ _ _ _ _ _ _ _ _",
+    "5": "Rang: _ _ _ _ _ _",
+    "6": "Asosiy mato: _ _ _ _ _ _ _",
+    "7": "Tarkibi: _ _ _ _ _ _",
+    "8": "Kafolatlangan saqlash muddati: _ _ _ ",
+    "9": "O’xshash mahsulotlar",
+    "10": "CCO-00.4"
   }
 }

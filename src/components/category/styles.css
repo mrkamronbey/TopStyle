@@ -1,0 +1,36 @@
+.ant-dropdown-menu {
+  padding: 15px !important;
+  position: absolute;
+  width: 400px;
+  top: 5px;
+  left: 140px;
+
+}
+/* .ant-dropdown-trigger {
+  border-radius: 10px !important;
+  padding: 10px 20px !important;
+  background: #03544C;
+} */
+
+.ant-space-item {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.ant-space-item > i {
+  margin-right: 7px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.ant-dropdown-menu-item{
+    border-bottom: 1px solid #EEEEEE;
+    border-radius: 0 !important;
+    padding: 10px 0 !important;
+}

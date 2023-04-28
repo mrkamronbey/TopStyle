@@ -1,13 +1,13 @@
 import { useState } from "react";
 import HeaderBottom from "./header-bottom";
 import HeaderMobile from "./header-mobile";
-import { Wrapper } from "./styled-index";
+import styles from './style.module.css'
 import HeaderTop from "./header-top";
 function Header() {
   const [HeaderHamburger, setHamburger] = useState(false);
   return (
     <>
-      <Wrapper>
+      <div className={styles.wrapper}>
         <HeaderTop />
         <HeaderBottom
           HandleOpen2={() => setHamburger(true)}
@@ -17,7 +17,7 @@ function Header() {
           open={HeaderHamburger}
           HandleClose2={() => setHamburger(false)}
         />
-      </Wrapper>
+      </div>
     </>
   );
 }

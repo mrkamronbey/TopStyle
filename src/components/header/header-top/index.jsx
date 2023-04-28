@@ -16,7 +16,7 @@ const HeaderTop = () => {
     <>
       <div className={styles.header_wrapper}>
         <WrapperContainer>
-          <Row>
+          <Row className={styles.row}>
             <Col lg={6} md={6} sx={6} sm={6}>
               <div className={styles.social}>
                 <p>{t("Header.0")}</p>

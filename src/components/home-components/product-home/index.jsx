@@ -1,10 +1,14 @@
 import React from "react";
 import { Row, Col } from "react-grid-system";
 import { NavLink } from "react-router-dom";
-import Product from "../../../assets/home/product1.png";
 import styles from "./styled.module.css";
 import { useTranslation } from "react-i18next";
 import { BigContainer } from "../../../styled-app";
+// image import
+import Product from "../../../assets/home/product1.png";
+import Product1 from "../../../assets/home/product2.png";
+// image import
+
 const ProductHome = () => {
   const { t } = useTranslation();
   return (
@@ -13,7 +17,7 @@ const ProductHome = () => {
         <BigContainer>
           <div className={styles.row_wrap}>
             <Row className={styles.row}>
-              <Col lg={3}>
+              <Col className={styles.col} lg={3} md={6} sm={12} sx={12}>
                 <div className={styles.product_wrapper}>
                   <NavLink className={styles.links} to="#">
                     {t("Home.0")}{" "}
@@ -21,7 +25,7 @@ const ProductHome = () => {
                   <img src={Product} alt="" />
                 </div>
               </Col>
-              <Col lg={3}>
+              <Col className={styles.col} lg={3} md={6} sm={12} sx={12}>
                 <div className={styles.product_wrapper}>
                   <NavLink className={styles.links} to="#">
                     {t("Home.1")}{" "}
@@ -29,15 +33,15 @@ const ProductHome = () => {
                   <img src={Product} width="200px" alt="" />
                 </div>
               </Col>
-              <Col lg={6}>
+              <Col className={styles.col} lg={6} md={6} sm={12} sx={12}>
                 <div className={styles.product_wrapper}>
                   <NavLink className={styles.links} to="#">
                     {t("Home.2")}{" "}
                   </NavLink>
-                  <img src={Product} width="200px" alt="" />
+                  <img src={Product1} alt="" />
                 </div>
               </Col>
-              <Col lg={6}>
+              <Col className={styles.col} lg={6} md={6} sm={12} sx={12}>
                 <div className={styles.product_wrapper}>
                   <NavLink className={styles.links} to="#">
                     {t("Home.3")}{" "}
@@ -45,7 +49,7 @@ const ProductHome = () => {
                   <img src={Product} width="200px" alt="" />
                 </div>
               </Col>
-              <Col lg={3}>
+              <Col className={styles.col} lg={3} md={6} sm={12} sx={12}>
                 <div className={styles.product_wrapper}>
                   <NavLink className={styles.links} to="#">
                     {t("Home.4")}{" "}
@@ -53,7 +57,7 @@ const ProductHome = () => {
                   <img src={Product} width="200px" alt="" />
                 </div>
               </Col>
-              <Col lg={3}>
+              <Col className={styles.col} lg={3} md={6} sm={12} sx={12}>
                 <div className={styles.product_wrapper}>
                   <NavLink className={styles.links} to="#">
                     {t("Home.5")}{" "}

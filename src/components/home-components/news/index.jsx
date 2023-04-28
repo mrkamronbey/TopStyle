@@ -4,8 +4,7 @@ import React from "react";
 import styles from "./styled.module.css";
 import Slider from "react-slick";
 import "./style.css";
-import "swiper/css";
-import "swiper/css/pagination";
+
 import { BigContainer } from "../../../styled-app";
 import Banner from "../../../assets/home/banner.png";
 

@@ -14,7 +14,7 @@ const HomeComponent = () => {
       <Category />
       <News />
       <div className={styles.chooseBg}>
-        {/* <ProductHome /> */}
+        <ProductHome />
         <ChooseUs />
       </div>
       <PopularProduct />

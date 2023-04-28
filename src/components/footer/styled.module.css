@@ -7,6 +7,7 @@
   background-position: center center;
   z-index: 10;
   position: relative;
+  overflow-y: hidden;
 }
 .social_box {
   display: flex;
@@ -84,10 +85,12 @@
 .me_text > a {
   margin-bottom: 10px;
 }
+ .row{
+  margin: 0 !important;
+ }
 
 @media only screen and (max-width: 1024px) {
   .row {
-    margin: 0 !important;
     padding: 0 20px;
   }
 

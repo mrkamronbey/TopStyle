@@ -100,10 +100,37 @@
   background-color: #03544c;
 }
 
-@media only screen and (max-width: 1024px) {
-    .row_wrap {
-      width: 100%;
-      border-radius: 0;
-      padding: 10px 0;
-    }
+@media only screen and (max-width: 1090px) {
+  .row_wrap {
+    width: 100%;
+    border-radius: 0;
+    padding: 10px 0;
   }
+
+  .line{
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .ourproduct_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .ourproduct_card:nth-child(2){
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .our_img{
+    width: 100%;
+  }
+
+  .our_img img{
+    width: 100%;
+    margin: 20px 0;
+  }
+}
