@@ -68,5 +68,45 @@
     "8": "Kafolatlangan saqlash muddati: _ _ _ ",
     "9": "O’xshash mahsulotlar",
     "10": "CCO-00.4"
+  },
+  "Order": {
+    "0": "Buyurtma asosida kiyim tayyorlash",
+    "1": "Biz sizning shaxsiy buyurtmalaringiz bo'yicha mahsulotlarni ranglar va ishlatiladigan materiallarga bo'lgan istaklarni inobatga olgan holda tikamiz.",
+    "2": "Buyurtma bo'yicha kombinezonlarni tikish sizga quyidagilarga imkon beradi:",
+    "3": "Xodimlarning sog'lig'ini ta'minlash",
+    "4": "Xavfsizlik talablariga rioya qiling",
+    "5": "Bozorda ajralib turish va raqobatbardoshlikni oshirish",
+    "6": "Kompaniyaning ijobiy imidji va obro'sini saqlash",
+    "7": "Biz buyurtma berish uchun ish kiyimlarini tikishga tayyormiz va sizga 100% sifat kafolati beramiz!",
+    "8": "Biz har qanday murakkablikdagi kombinezonlarni tikish tartibini tushunamiz.",
+    "9": "Bizning kompaniyamiz faqat yuqori sifatli mato va aksessuarlar bilan ishlaydi, buning natijasida kiyimlar nafaqat funktsional va amaliy, balki chiroyli ko'rinishga ega.",
+    "10": "Kombinezni tikishda barcha zamonaviy talablar bajariladi. Bizdan sotib olingan barcha mahsulotlar sertifikatlangan va sifat standartlariga javob beradi.",
+    "11": "Turli sohadagi ishchilar uchun ish kiyimlarini yaratamiz. Bu yerda siz ofitsiantlar, xizmatchilar uchun kiyim-kechaklarni tikish, qurilish tashkilotlari, avtotransport korxonalari, texnik xizmat ko‘rsatish shoxobchalari uchun ishchi kombinezonlar tikish, qishki va yozgi maxsus kiyimlar va hokazolarga buyurtma berishingiz mumkin.",
+    "12": "Buyurtma qoldirish",
+    "13": "Ismingiz",
+    "14": "Telefon raqamingiz",
+    "15": "Buyurtma qoldirish",
+    "16": "Bajargan ishlarimizdan namunalar",
+    "17": "Bizdan mamnun mijozlar"
+  },
+  "Logo": {
+    "0": "Kiyimlarga logo tushirish",
+    "1": "Termal bosib chiqarish",
+    "2": "Logotipni qo'llashning arzon va eng tezkor usuli. Termal bosib chiqarish paxta va sintetik matolarda amalga oshiriladi va boy va aniq tasvirni olish bilan birga tasvirning eng kichik detallarini aniq takrorlash imkonini beradi. Agar tayyor mahsulot kuchli mexanik stressga duchor bo'lmasa va 40 darajadan yuqori haroratda yuvilmasa, termal bosib chiqarish orqali qo'llaniladigan elementning xizmat qilish muddati amalda cheksizdir.",
+    "3": "Kashta tikish",
+    "4": "Kiyimlarni markalash uchun kashtado'zlikdan foydalanish nafaqat eskirishga chidamliligi tufayli xizmat muddatini oshiradi, balki shaklga yanada ko'rinadigan va mustahkam ko'rinish beradi. Bu matoga bosib chiqarishning eng bardoshli va ayni paytda qimmat turlaridan biridir. Ish kiyimida kashtado'zlik yordamida chop etilgan logotip uzoq vaqt davomida o'zining yorqinligi va tiniqligini saqlab qoladi. Zamonaviy jihozlar va materiallarning keng assortimenti har qanday murakkablikdagi logotipni, hatto yumshoq va junli matolarda ham kashta qilish imkonini beradi.",
+    "5": "Chevron",
+    "6": "Chevronlardan foydalanish ish kiyimlarini markalashning universal usuli hisoblanadi, chunki elementni kiyim elementlariga, masalan, kontaktli lenta (kundalik hayotda Velcro) yoki yopishqoq asos yordamida yopishtirish mumkin, bu esa tasvirni istalgan joyda qo'llash imkonini beradi. vaqt, hech qanday maxsus qurilmalardan foydalanmasdan, va kontaktli lentani ishlatgan holda, chevronni olib tashlash qo'llash kabi oson bo'ladi. Oddiyligiga qaramay, chevron kashtado'zlik kabi yuqori ko'rsatkichlarga ega.",
+    "7": "Brendlash",
+    "8": "Dubulg'alar, payvandlash maskalari, quloqchalar va boshqa shaxsiy himoya vositalari kabi shaxsiy himoya vositalari uchun brending xizmatlari ro'yxatini taqdim etadi: brendlash stikerlar yasash va keyin ularni mahsulotga qo'llash orqali amalga oshiriladi. Stikerni qo'llash uchun joy tanlash faqat mahsulotdagi mos o'lchamdagi prokladkalar yuzasi mavjudligi bilan cheklanadi. Mahsulotni stikerlar bilan markalash narxi logotipning o'lchamiga bog'liq, bu esa, o'z navbatida, dubulg'aga stikerlar logotipga zarar yetkazmasdan yuqori sifatli qo'llanilishi kerak bo'lgan texnologik saytlarning o'lchamiga bog'liq. Ko'pgina dubulg'a ishlab chiqaruvchilari turli o'lchamlarga ega."
+  },
+  "Contact": {
+    "0": "Aloqa uchun",
+    "1": "Biz ijtimoy tarmoqlarda",
+    "2": "Telefon raqamlarimiz",
+    "3": "Ish vaqtimiz",
+    "4": "Dam olish kunlari: Sha-Ya",
+    "5": "Manzilimiz",
+    "6": "Toshkent shahri, Sergeli tumani, O’zgarish ko’cha 45-uy "
   }
 }

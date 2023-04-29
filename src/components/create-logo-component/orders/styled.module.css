@@ -1,0 +1,203 @@
+.row_wrap {
+  width: 70%;
+  margin-left: auto;
+  /* background: #ffffff; */
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.order_section {
+  overflow-y: hidden;
+}
+
+ol {
+  padding: 0 0 0 20px;
+}
+ol > li > p {
+  margin: 7px 0;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.order_card {
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+.order_content {
+  padding: 0 20px 0 0;
+}
+.order_contents {
+  padding: 0 0 0 20px;
+}
+.order_content h4,
+.order_contents h4 {
+  margin: 0 0 10px 0;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.order_card_titles {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.order_card_titles1 {
+  margin-bottom: 0;
+}
+
+.margins {
+  margin-top: 0;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+.col {
+  padding: 0 !important;
+}
+
+.order_form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order_form input {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #aaaaaa;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  padding: 15px 90px 15px 15px;
+}
+.form_title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+}
+
+.order_form button {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  text-align: center;
+  background: #03544c;
+  border-radius: 10px;
+  padding: "15px 30px";
+}
+
+.choose_title h2 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.line {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 2px;
+  background-color: #eeeeee;
+  position: relative;
+  border-radius: 10px;
+}
+
+.line::before {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #03544c;
+}
+@media only screen and (max-width: 1090px) {
+  .row_wrap {
+    width: 100%;
+    padding: 0;
+  }
+  .col {
+    padding: 0 15px !important;
+  }
+  .order_from_wrapper {
+    padding: 0 15px !important;
+  }
+  .choose_title,
+  .order_card_titles,
+  .order_card_titles1 {
+    margin-left: 20px;
+  }
+  .line {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 866px) {
+  .order_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .order_form input {
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .order_card {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    margin: 15px 0;
+    flex-direction: column;
+  }
+ 
+  .order_img img {
+    width: 100%;
+    height: 350px;
+  }
+  .order_contents {
+    margin-top: 10px;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .order_img img {
+    width: 100%;
+    height: 280px;
+  }
+}
+

@@ -9,8 +9,10 @@ const ProductMoreComponent = () => {
     <>
       <div className={styles.more_wrapper}>
         <Category />
-        <More />
-        <LikeProduct />
+        <div className={styles.more_bg}>
+          <More />
+          <LikeProduct />
+        </div>
       </div>
     </>
   );
