@@ -1,0 +1,137 @@
+.top_style_section {
+  padding: 60px 0 100px 0;
+  background-image: url("../../../assets/partner/partnerline.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-position-y: 400px;
+  background-position-x: -130px;
+  overflow-y: hidden;
+}
+.row_wrap {
+  width: 70.3%;
+  margin-left: auto;
+}
+
+.row {
+  margin: 0 !important;
+  border-radius: 10px;
+}
+
+.col {
+  padding: 0 8px !important;
+  height: 300px !important;
+}
+
+.choose_title h2 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.line {
+  margin-bottom: 20px;
+  width: 80%;
+  height: 2px;
+  background-color: #eeeeee;
+  position: relative;
+  border-radius: 10px;
+}
+
+.line::before {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #03544c;
+}
+
+.ol_wrap > ol {
+  padding: 0 0 0 15px;
+}
+
+.ol_wrap > ol > li > p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin: 10px 0;
+}
+
+.top_style_card {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-shadow: 5px 5px 10px rgba(170, 170, 170, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  height: 100%;
+}
+
+.top_style_card > p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.titles {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.titles > img {
+  margin-right: 10px;
+}
+
+.titles > h4 {
+  margin: 0;
+}
+@media only screen and (max-width: 1090px) {
+  .row_wrap {
+    width: 100%;
+  }
+
+  .line {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1078px) {
+  .row_wrap {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .row_wrap {
+    padding: 0;
+  }
+  .ol_wrap {
+    padding: 0 10px;
+  }
+
+  .choose_title {
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .col{
+   height: auto !important;
+  }
+  .top_style_card{
+    height: auto;
+  }
+ }

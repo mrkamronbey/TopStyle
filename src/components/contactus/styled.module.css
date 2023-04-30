@@ -1,0 +1,113 @@
+.contact_section {
+  background-image: url("../../assets/product/productbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-position-y: 200px;
+  padding: 183px 0 10px 0;
+  overflow-y: hidden;
+}
+.row_wrap {
+  width: 72%;
+  margin-left: auto;
+  /* padding: 10px 0; */
+}
+
+.row {
+  margin: 0 !important;
+  /* background-color: #fff; */
+  border-radius: 10px;
+}
+
+.choose_title h2 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.line {
+  margin-bottom: 20px;
+  width: 80%;
+  height: 2px;
+  background-color: #eeeeee;
+  position: relative;
+  border-radius: 10px;
+}
+
+.line::before {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #03544c;
+}
+.call_box {
+  margin: 0 0 50px 0;
+}
+.contact_p {
+  display: flex;
+  align-items: top !important;
+}
+.call_box > p {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.contact_p > span {
+  max-width: 350px;
+}
+
+.call_box > h4 {
+  margin: 10px 0 15px 0;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #03544c;
+}
+
+.contact_link {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  text-decoration: none;
+}
+.contact_link > img,
+.call_box > p > img {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 1090px) {
+    .row_wrap {
+      width: 100%;
+    }
+  
+    .line {
+      width: 80%;
+    }
+    
+    /* .choose_title {
+      margin-left: 20px;
+    } */
+  }
