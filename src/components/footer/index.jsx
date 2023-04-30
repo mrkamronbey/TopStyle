@@ -44,7 +44,7 @@ const Footer = () => {
             <Col className={styles.col} lg={4} md={6} sx={12} sm={6}>
               <ul className={styles.footer_list}>
                 <li>
-                  <a className={styles.item_link} href="#">
+                  <a className={styles.item_link} href="/">
                     {t("Footer.1")}
                   </a>
                 </li>
@@ -54,17 +54,17 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a className={styles.item_link} href="#">
+                  <a className={styles.item_link} href="/createlogo">
                     {t("Footer.3")}
                   </a>
                 </li>
                 <li>
-                  <a className={styles.item_link} href="#">
+                  <a className={styles.item_link} href="aboutme">
                     {t("Footer.4")}
                   </a>
                 </li>
                 <li>
-                  <a className={styles.item_link} href="#">
+                  <a className={styles.item_link} href="/contact">
                     {t("Footer.5")}
                   </a>
                 </li>
