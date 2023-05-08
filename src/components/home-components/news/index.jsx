@@ -1,9 +1,10 @@
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
 import React from "react";
 import styles from "./styled.module.css";
 import Slider from "react-slick";
 import "./style.css";
+import banner1 from '../../../assets/category/banner1.png'
+import banner2 from '../../../assets/category/banner2.png'
+import banner3 from '../../../assets/category/banner3.png'
 
 import { BigContainer } from "../../../styled-app";
 import Banner from "../../../assets/home/banner.png";
@@ -51,13 +52,13 @@ const News = () => {
           <div className={styles.row_wrap}>
             <Slider {...settings}>
               <div>
-                <img className={styles.slider_img} src={Banner} alt="" />
+                <img className={styles.slider_img} src={banner1} alt="" />
               </div>
               <div>
-                <img className={styles.slider_img} src={Banner} alt="" />
+                <img className={styles.slider_img} src={banner2} alt="" />
               </div>
               <div>
-                <img className={styles.slider_img} src={Banner} alt="" />
+                <img className={styles.slider_img} src={banner3} alt="" />
               </div>
             </Slider>
           </div>

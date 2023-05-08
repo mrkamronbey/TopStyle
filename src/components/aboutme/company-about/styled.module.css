@@ -193,4 +193,10 @@
   .mini_img {
     height: 250px;
   }
+  .logo_img{
+    width: 120px;
+    object-fit: cover;
+  }
 }
+
+

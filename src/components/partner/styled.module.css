@@ -78,7 +78,7 @@
   width: 200px;
   height: 200px;
   position: absolute;
-  top: 26%;
+  top: 34%;
   left: 36%;
   z-index: 100;
 }
@@ -118,6 +118,12 @@
     top: 26%;
     left: 36%;
     z-index: 100;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .partner_section {
+    background-image: none !important;
   }
 }
 @media only screen and (max-width: 680px) {

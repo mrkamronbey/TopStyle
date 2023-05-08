@@ -111,3 +111,9 @@
       margin-left: 20px;
     } */
   }
+
+  @media only screen and (max-width: 760px) {
+    .contact_section {
+      background-image: none !important;
+    }
+  }

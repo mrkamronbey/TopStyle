@@ -19,10 +19,12 @@
   justify-content: center !important;
   margin: 10px 0 !important;
 }
-.slick-slide div img{
+.styled_scroll_div__zJYG4 .slick-slide div img{
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  width: 100px;
+  height: 100%;
 }
 .styled_scroll_div__zJYG4 .slick-prev,
 .styled_scroll_div__zJYG4 .slick-next {

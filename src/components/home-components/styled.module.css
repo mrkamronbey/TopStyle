@@ -9,7 +9,6 @@
   background-position: bottom;
   background-position-y: 330px;
   background-position-x: -450px;
-  
 }
 @media only screen and (max-width: 1024px) {
   .chooseBg {
@@ -20,5 +19,11 @@
     background-position-y: 30px;
     background-position-x: 0;
     overflow-y: hidden;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .chooseBg {
+    background-image: none;
   }
 }

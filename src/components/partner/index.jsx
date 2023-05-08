@@ -7,24 +7,27 @@ import Slider from "react-slick";
 import "./style.css";
 
 // import img
-import logo1 from "../../assets/partner/logo1.png";
-import logo2 from "../../assets/partner/logo2.png";
-import logo3 from "../../assets/partner/logo3.png";
-import logo4 from "../../assets/partner/logo4.png";
-import logo5 from "../../assets/partner/logo5.png";
-import logo6 from "../../assets/partner/logo6.png";
-import logo7 from "../../assets/partner/logo7.png";
-import logo8 from "../../assets/partner/logo8.png";
-import logo9 from "../../assets/partner/logo9.png";
-import logo10 from "../../assets/partner/logo10.png";
-import logo11 from "../../assets/partner/logo11.png";
-import logo12 from "../../assets/partner/logo12.png";
-import logo13 from "../../assets/partner/logo13.png";
-import logo14 from "../../assets/partner/logo14.png";
-import logo15 from "../../assets/partner/logo15.png";
-import logo16 from "../../assets/partner/logo16.png";
-import logo17 from "../../assets/partner/logo17.png";
-import logo18 from "../../assets/partner/logo18.png";
+import logo1 from "../../assets/partner/7.png";
+import logo2 from "../../assets/partner/8.png";
+import logo3 from "../../assets/partner/9.png";
+import logo4 from "../../assets/partner/10.png";
+import logo5 from "../../assets/partner/11.png";
+import logo6 from "../../assets/partner/12.png";
+import logo7 from "../../assets/partner/13.png";
+import logo8 from "../../assets/partner/14.png";
+import logo9 from "../../assets/partner/15.png";
+import logo10 from "../../assets/partner/16.png";
+import logo11 from "../../assets/partner/17.png";
+import logo12 from "../../assets/partner/18.png";
+import logo13 from "../../assets/partner/19.png";
+import logo14 from "../../assets/partner/20.png";
+import logo15 from "../../assets/partner/21.png";
+import logo16 from "../../assets/partner/22.png";
+import logo17 from "../../assets/partner/23.png";
+import logo18 from "../../assets/partner/24.png";
+import logo19 from "../../assets/partner/25.png";
+import logo20 from "../../assets/partner/26.png";
+import logo21 from "../../assets/partner/27.png";
 import partnerLogo from "../../assets/partner/partnerlogo.png";
 // import img
 
@@ -134,6 +137,15 @@ const Partner = () => {
               </div>
               <div>
                 <img src={logo18} alt="" />
+              </div>
+              <div>
+                <img src={logo19} alt="" />
+              </div>
+              <div>
+                <img src={logo20} alt="" />
+              </div>
+              <div>
+                <img src={logo21} alt="" />
               </div>
             </Slider>
           </div>

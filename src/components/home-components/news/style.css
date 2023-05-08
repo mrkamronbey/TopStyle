@@ -16,9 +16,10 @@
 } */
 
 /* For the demo */
-.slick-prev,
-.slick-next {
+.styled_row_wrap__80Fhx .slick-prev,
+.styled_row_wrap__80Fhx .slick-next {
   z-index: 999 !important;
+  display: none !important;
 }
 .slick-prev {
   left: 15px !important;

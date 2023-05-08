@@ -128,10 +128,13 @@
   }
 }
 @media only screen and (max-width: 768px) {
-  .col{
-   height: auto !important;
+  .col {
+    height: auto !important;
   }
-  .top_style_card{
+  .top_style_card {
     height: auto;
   }
- }
+  .top_style_section {
+    background-image: none !important;
+  }
+}

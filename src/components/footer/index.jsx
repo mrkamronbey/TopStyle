@@ -23,7 +23,7 @@ const Footer = () => {
           <Row className={styles.row}>
             <Col className={styles.col} lg={4} md={6} sx={12} sm={6}>
               <div className={styles.logo_box}>
-                <img src={Logo} alt="logo" />
+                <img className={styles.footer_logo} src={Logo} alt="logo" />
                 <p>{t("Footer.0")}</p>
                 <div className={styles.social_box}>
                   <a href="https://t.me/uniformachilonzor">

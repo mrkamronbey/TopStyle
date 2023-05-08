@@ -87,7 +87,7 @@
   }
   .phone_box {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: flex-end;
   }
   .phone_box > a{

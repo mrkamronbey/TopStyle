@@ -71,3 +71,10 @@
     width: 80%;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .example_section {
+    background-image: none !important;
+  }
+}
+

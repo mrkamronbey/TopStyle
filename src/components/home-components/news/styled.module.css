@@ -13,4 +13,7 @@
   .row_wrap {
     width: 100%;
   }
+  .slider_img{
+    border-radius: 0 !important;
+  }
 }
