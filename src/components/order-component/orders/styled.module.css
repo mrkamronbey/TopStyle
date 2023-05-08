@@ -85,7 +85,7 @@ ol > li > p {
   line-height: 19px;
   display: flex;
   align-items: center;
-  color: #aaaaaa;
+  color: #000;
   background: #ffffff;
   border: 1px solid #eeeeee;
   border-radius: 10px;
@@ -191,6 +191,10 @@ ol > li > p {
   .order_contents {
     margin-top: 10px;
     padding: 0;
+  }
+
+  .order_from_wrapper{
+    display: none;
   }
 }
 

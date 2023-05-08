@@ -53,10 +53,7 @@
 .partner_card {
   height: 100%;
   width: 100%;
-  /* background: #ffffff; */
-  /* border: 1px solid #eeeeee; */
   border-radius: 15px;
-  /* margin-bottom: 20px; */
 }
 .col {
   height: 100px;
@@ -72,6 +69,20 @@
   margin: 0;
 }
 
+.scroll_div {
+  background-color: #fff;
+  border-radius: 15px;
+  position: relative;
+}
+.position_img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 26%;
+  left: 36%;
+  z-index: 100;
+}
+
 @media only screen and (max-width: 1090px) {
   .row_wrap {
     width: 100%;
@@ -85,6 +96,88 @@
   }
   .choose_title {
     margin-left: 20px;
+  }
+  .position_img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 26%;
+    left: 38%;
+    z-index: 100;
+  }
+  .scroll_div {
+    background-color: #fff;
+    border-radius: 0;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .position_img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 26%;
+    left: 36%;
+    z-index: 100;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .position_img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 26%;
+    left: 34%;
+    z-index: 100;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .position_img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 26%;
+    left: 36%;
+    z-index: 100;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .position_img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 26%;
+    left: 34%;
+    z-index: 100;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .position_img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 24%;
+    left: 32%;
+    z-index: 100;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .position_img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 24%;
+    left: 28%;
+    z-index: 100;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .position_img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 24%;
+    left: 26%;
+    z-index: 100;
   }
 }
 @media only screen and (max-width: 576px) {

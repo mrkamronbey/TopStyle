@@ -1,0 +1,85 @@
+.ant-dropdown-menu {
+  padding: 15px !important;
+  width: 100% !important;
+}
+
+
+.ant-space-item {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.ant-space-item > i {
+  margin-right: 7px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.ant-dropdown-menu-item {
+  border-bottom: 1px solid #eeeeee;
+  border-radius: 0 !important;
+  padding: 10px 0 !important;
+}
+
+@media only screen and (max-width: 1090px) {
+  .ant-dropdown {
+    width: 400px !important;
+    position: fixed !important;
+    top: 160px !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .ant-dropdown-menu {
+    padding: 15px !important;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0 !important;
+  }
+  .ant-dropdown {
+    position: fixed !important;
+    top: 120px !important;
+    left: 0;
+    right: 0;
+    width: 100% !important;
+    border-radius: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .ant-dropdown-menu {
+    padding: 15px !important;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0 !important;
+  }
+  .ant-dropdown {
+    position: fixed !important;
+    top: 120px !important;
+    left: 0;
+    right: 0;
+    width: 100% !important;
+    border-radius: 0 !important;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .ant-dropdown-menu {
+    padding: 15px !important;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0 !important;
+  }
+  .ant-dropdown {
+    position: fixed !important;
+    top: 120px !important;
+    left: 0;
+    right: 0;
+    width: 100% !important;
+    border-radius: 0 !important;
+  }
+}

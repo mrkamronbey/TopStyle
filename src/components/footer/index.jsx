@@ -10,7 +10,7 @@ import Telegram from "../../assets/footer/lighttg.png";
 import Instagram from "../../assets/footer/lightinst.png";
 import YouTube from "../../assets/footer/lightyou.png";
 import Facebook from "../../assets/footer/lightface.png";
-import { width } from "@mui/system";
+
 // image import
 
 const Footer = () => {
@@ -26,18 +26,18 @@ const Footer = () => {
                 <img src={Logo} alt="logo" />
                 <p>{t("Footer.0")}</p>
                 <div className={styles.social_box}>
-                  <a href="#">
+                  <a href="https://t.me/uniformachilonzor">
                     <img src={Telegram} alt="Telegram" />
                   </a>
-                  <a href="#">
+                  <a href="https://instagram.com/topstyle05">
                     <img src={Instagram} alt="Instagram" />
                   </a>
-                  <a href="#">
+                  {/* <a href="#">
                     <img src={YouTube} alt="YouTube" />
                   </a>
                   <a href="#">
                     <img src={Facebook} alt="Facebook" />
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </Col>
@@ -74,14 +74,17 @@ const Footer = () => {
               <div className={styles.me_footer}>
                 <h4>{t("Footer.6")}</h4>
                 <p className={styles.me_text}>
-                  <a href="tel:+998 93 908 70 85">+998 93 908 70 85</a> <br />
-                  <a href="tel:+998 99 247 97 74">+998 99 247 97 74</a>
+                  <a href="tel:+998 (99) 322-33-35">+998 (99) 322-33-35</a> <br />
+                  <a href="tel:+998 (99) 858-67-27">+998 (99) 858-67-27</a>
                 </p>
                 <h4>{t("Footer.7")}</h4>
                 <p className={styles.me_text}>{t("Footer.8")}</p>
                 <h4>{t("Footer.9")}</h4>
                 <p style={{ maxWidth: "200px" }} className={styles.me_text}>
                   {t("Footer.10")}
+                </p>
+                <p style={{ maxWidth: "200px" }} className={styles.me_text}>
+                  {t("Footer.16")}
                 </p>
               </div>
             </Col>

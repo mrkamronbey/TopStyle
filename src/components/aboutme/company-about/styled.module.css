@@ -123,6 +123,7 @@
   border-radius: 10px;
   padding: 20px 0;
 }
+
 .count_wrap > h4 {
   margin: 0;
   font-family: "Rubik";
@@ -132,7 +133,7 @@
   line-height: 40px;
   color: #03544c;
 }
-.count_wrap > p {
+.count_wrap > span {
   margin: 7px 0 0 0;
   font-family: "Rubik";
   font-style: normal;

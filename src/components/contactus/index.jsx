@@ -33,19 +33,28 @@ const ContactUs = () => {
                   <p>
                     <a
                       className={styles.contact_link}
-                      href="tel:+998 (93) 908-70-85"
+                      href="tel:+998 (99) 322-33-35"
                     >
                       <img src={contact1} alt="" />
-                      <span>+998 (93) 908-70-85</span>
+                      <span>+998 (99) 322-33-35</span>
                     </a>
                   </p>
                   <p>
                     <a
                       className={styles.contact_link}
-                      href="tel:+998 (99) 247-97-74"
+                      href="tel:+998 (99) 858-67-27"
                     >
                       <img src={contact1} alt="" />
-                      <span>+998 (99) 247-97-74</span>
+                      <span>+998 (99) 858-67-27</span>
+                    </a>
+                  </p>
+                  <p>
+                    <a
+                      className={styles.contact_link}
+                      href="tel:+998 (93) 519-44-82"
+                    >
+                      <img src={contact1} alt="" />
+                      <span>+998 (93) 519-44-82</span>
                     </a>
                   </p>
                 </div>
@@ -78,22 +87,22 @@ const ContactUs = () => {
                   <p>
                     <a
                       className={styles.contact_link}
-                      href="t.me/top_style_group"
+                      href="https://t.me/uniformachilonzor"
                     >
                       <img src={contact5} alt="" />
-                      <span>t.me/top_style_group</span>
+                      <span>https://t.me/uniformachilonzor</span>
                     </a>
                   </p>
                   <p>
                     <a
                       className={styles.contact_link}
-                      href="https://instagram.com/top_style_group"
+                      href="https://instagram.com/topstyle05"
                     >
                       <img src={contact6} alt="" />
-                      <span>instagram.com/top_style_group</span>
+                      <span>https://instagram.com/topstyle05</span>
                     </a>
                   </p>
-                  <p>
+                  {/* <p>
                     <a className={styles.contact_link} href="">
                       <img
                         src={contact7}
@@ -110,7 +119,7 @@ const ContactUs = () => {
                       <img src={contact8} alt="" />
                       <span>t.me/top_style_group_bot</span>
                     </a>
-                  </p>
+                  </p> */}
                 </div>
               </Col>
             </Row>

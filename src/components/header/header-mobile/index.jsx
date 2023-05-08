@@ -42,18 +42,18 @@ function HeaderMobile({ open, HandleClose2 }) {
         </ul>
         <div className="socials">
           <div className="social_medias">
-            <a href="https://telegram.com">
+            <a href="https://t.me/uniformachilonzor">
               <img src={Telegram} alt="telegram" />
             </a>
-            <a href="https://instagram.com">
+            <a href="https://instagram.com/topstyle05">
               <img src={Instagram} alt="instagram" />
             </a>
-            <a href="https://youtube.com">
+            {/* <a href="https://youtube.com">
               <img src={YouTube} alt="youtube" />
             </a>
             <a href="https://facebook.com">
               <img src={Facebook} alt="facebook" />
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="flags">

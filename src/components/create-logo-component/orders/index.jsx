@@ -6,9 +6,9 @@ import { Row, Col } from "react-grid-system";
 import Input from "../../../common/input";
 import { Button } from "../../../common/button/styled-index";
 
-import LogoCard1 from "../../../assets/partner/logocard.png";
-import LogoCard2 from "../../../assets/partner/logocard1.png";
-import LogoCard3 from "../../../assets/partner/logocard2.png";
+import LogoCard1 from "../../../assets/create_logo/logocards1.jpg";
+import LogoCard2 from "../../../assets/create_logo/logocards2.jpg";
+import LogoCard3 from "../../../assets/create_logo/logocards3.jpg";
 import LogoCard4 from "../../../assets/partner/logocard3.png";
 
 

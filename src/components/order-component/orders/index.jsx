@@ -1,16 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { BigContainer } from "../../../styled-app";
 import styles from "./styled.module.css";
 import { useTranslation } from "react-i18next";
 import { Row, Col } from "react-grid-system";
 import Input from "../../../common/input";
 import { Button } from "../../../common/button/styled-index";
+import { PostContact } from "../../../redux/form";
+import { useDispatch } from "react-redux";
 
 import Order1 from "../../../assets/order/order1.png";
 import Order2 from "../../../assets/order/order2.png";
 
 const Orders = () => {
   const { t } = useTranslation();
+  const dispatch = useDispatch();
+  const [name, setName] = useState(null);
+  const [phone, setPhone] = useState(null);
+  // console.log(name, phone);
+
+  const HandleSubmit = async (e) => {
+    e.preventDefault();
+    await dispatch(
+      PostContact({
+        name: name,
+        phone_number: phone,
+      })
+    );
+  };
+  console.log({
+    name: name,
+    phone_number: phone,
+  });
   return (
     <>
       <div className={styles.orders_section}>
@@ -66,10 +86,19 @@ const Orders = () => {
 
             <div className={styles.order_from_wrapper}>
               <h2 className={styles.form_title}>{t("Order.12")}</h2>
-              <form className={styles.order_form}>
-                <Input placeholder={t("Order.13")} />
-                <Input placeholder={t("Order.14")} />
+              <form onSubmit={HandleSubmit} className={styles.order_form}>
+                <Input
+                  onChange={(e) => setName(e.target.value)}
+                  type="text"
+                  placeholder={t("Order.13")}
+                />
+                <Input
+                  onChange={(e) => setPhone(e.target.value)}
+                  type="number"
+                  placeholder={t("Order.14")}
+                />
                 <Button
+                  type="submit"
                   style={{
                     background: "#03544c",
                     borderRadius: "10px",

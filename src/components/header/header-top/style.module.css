@@ -3,7 +3,7 @@
   background: #d9d9d9;
 }
 
-.row{
+.row {
   margin: 0 !important;
 }
 .social {
@@ -63,6 +63,7 @@
     padding: 20px;
   }
 }
+
 @media only screen and (max-width: 956px) {
   .social p {
     display: none;
@@ -79,6 +80,7 @@
     flex-direction: column;
   }
 }
+
 @media only screen and (max-width: 575px) {
   .social {
     display: none;
@@ -87,6 +89,9 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+  }
+  .phone_box > a{
+    margin: 0;
   }
   .header_wrapper {
     padding: 5px 0;

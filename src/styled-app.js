@@ -6,7 +6,6 @@ export const WrapperContainer = styled.div`
   margin: 0 auto;
 `;
 
-
 export const BigContainer = styled.div`
   max-width: 1300px;
   width: 100%;
@@ -15,8 +14,8 @@ export const BigContainer = styled.div`
 export const GlobalStyle = createGlobalStyle`
 
   html{
-    scroll-behavior:smooth
-    }
+    scroll-behavior:smooth !important;
+  }
     
   body {
     margin: 0;

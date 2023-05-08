@@ -4,6 +4,7 @@ export const Section = styled.div`
   padding: 7px 0;
   background: #03544c;
   box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
 
   .ant-input {
     padding: 4.3px 11px !important;
@@ -39,13 +40,13 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
 
+
   @media only screen and (max-width: 1283px) {
     padding: 0 20px;
   }
-  /* @media only screen and (max-width: 1109px) {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+ 
+  /* .category_mobile{
+    display: none;
   } */
 
   .links > p {
@@ -151,7 +152,7 @@ export const MobileDiv = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 25%;
+    /* width: 25%; */
     .AuthMobile {
       background-color: transparent;
       border: none;

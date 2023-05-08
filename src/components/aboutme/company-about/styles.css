@@ -1,0 +1,102 @@
+.hero {
+  width: 100%;
+  height: 800px;
+  color: #c4dfe6;
+  /* background-color: #07575b; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 5rem;
+}
+
+.title {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  color: #003b46;
+  text-transform: capitalize;
+  margin-bottom: 5rem;
+}
+
+.title h1 {
+  border-bottom: 1px solid #003b46;
+}
+
+/* .counter {
+  padding: 5rem 3rem 5rem 3rem;
+  background: #c4dfe6;
+} */
+
+.counter-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.counter-column {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-shadow: 5px 5px 10px rgba(170, 170, 170, 0.1);
+  border-radius: 10px;
+  padding: 20px 0;
+}
+
+.strong span {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 57px;
+  color: #03544c;
+}
+
+.number {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 57px;
+  color: #03544c;
+}
+
+.counter-column .percentage {
+  font-style: 3rem;
+  font-weight: 400;
+  color: #003b46;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .counter-row {
+    grid-template-columns: 1fr 1fr;
+  }
+  .counter-column {
+    padding: 2rem 0 2rem 0;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .title {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+  /* .counter {
+    padding: 1rem 1rem 2rem 1rem;
+  } */
+  .counter-row {
+    grid-template-columns: 1fr;
+  }
+  .counter-column {
+    padding: 2rem 0 2rem 0;
+  }
+}

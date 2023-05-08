@@ -1,4 +1,5 @@
 import styles from "./style.module.css";
+import './styles.css'
 
 function Input({ type, style, placeholder, onChange, value, key, styleInput, icon }) {
   return (

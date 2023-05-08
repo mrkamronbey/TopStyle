@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import styles from "./styled.module.css";
 import { useTranslation } from "react-i18next";
 import Input from "../../../common/input";
@@ -6,9 +6,36 @@ import { Button } from "../../../common/button/styled-index";
 import Call from "../../../assets/footer/calling.png";
 import User from "../../../assets/footer/user.png";
 import "./style.css";
+import { PostContact } from "../../../redux/form";
+import { useDispatch } from "react-redux";
 
 const Location = () => {
+  const dispatch = useDispatch();
   const { t } = useTranslation();
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [nameDesktop, setNameDesktop] = useState("");
+  const [phoneDesktop, setPhoneDesktop] = useState("");
+
+  const HandleSubmitPhone = async (e) => {
+    e.preventDefault();
+    await dispatch(
+      PostContact({
+        name: name,
+        phone_number: phone,
+      })
+    );
+  };
+  const HandleSubmitDesktop = async (e) => {
+    e.preventDefault();
+    const body = {
+      name: nameDesktop,
+      phone_number: phoneDesktop,
+    };
+    console.log("ok")
+    await dispatch(PostContact(body));
+  };
+
   return (
     <>
       <div className={styles.location_wrapper}>
@@ -16,8 +43,9 @@ const Location = () => {
           <div className={styles.position_boxs}>
             <div className={styles.from_wrapper}>
               <h2 className={styles.form_title}>{t("Footer.11")}</h2>
-              <form className={styles.form}>
+              <form onSubmit={HandleSubmitPhone} className={styles.form}>
                 <Input
+                  onChange={(e) => setName(e.target.value)}
                   placeholder={t("Footer.12")}
                   icon={
                     <img className={styles.input_img} src={User} alt="User" />
@@ -32,10 +60,12 @@ const Location = () => {
                   }}
                 />
                 <Input
+                  onChange={(e) => setPhone(e.target.value)}
                   icon={
                     <img className={styles.input_img} src={Call} alt="Call" />
                   }
                   placeholder={t("Footer.13")}
+                  type="number"
                   styleInput={{
                     padding: "11px 10px 11px 35px",
                     border: "none",
@@ -58,6 +88,7 @@ const Location = () => {
                     fontSize: "16px",
                     marginTop: "20px",
                   }}
+                  type="submit"
                 >
                   {t("Footer.14")}
                 </Button>
@@ -68,8 +99,9 @@ const Location = () => {
         <div className={styles.position_box}>
           <div className={styles.from_wrapper}>
             <h2 className={styles.form_title}>{t("Footer.11")}</h2>
-            <form className={styles.form}>
+            <form onSubmit={HandleSubmitDesktop} className={styles.form}>
               <Input
+                onChange={(e) => setNameDesktop(e.target.value)}
                 placeholder={t("Footer.12")}
                 icon={
                   <img className={styles.input_img} src={User} alt="User" />
@@ -84,10 +116,12 @@ const Location = () => {
                 }}
               />
               <Input
+                onChange={(e) => setPhoneDesktop(e.target.value)}
                 icon={
                   <img className={styles.input_img} src={Call} alt="Call" />
                 }
                 placeholder={t("Footer.13")}
+                type="number"
                 styleInput={{
                   padding: "11px 10px 11px 35px",
                   border: "none",
@@ -98,7 +132,9 @@ const Location = () => {
                 }}
               />
               <Button
+                type="submit"
                 style={{
+                  width: "100%",
                   background: "#03544c",
                   borderRadius: "30px",
                   border: "none",

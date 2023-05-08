@@ -2,9 +2,17 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: none;
+  height: 71% ;
 
   .socials {
     display: block;
+    @media only screen and (max-width: 1090px) {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      flex-direction: column;
+      margin-top: 20px;
+    }
     @media only screen and (max-width: 575px) {
       display: flex;
       align-items: flex-start;
@@ -42,8 +50,9 @@ export const Wrapper = styled.div`
     background: #03544c;
     box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 15px 15px;
-    height: 85%;
+    height: auto;
     z-index: 110;
+    padding-bottom: 15px;
     top: ${(props) => (props.open ? "0px" : "-1000px")};
     transition: 1s;
     border-bottom-left-radius: 25px;
@@ -53,6 +62,12 @@ export const Wrapper = styled.div`
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media only screen and (max-width: 425px) {
+        img{
+          width: 110px;
+          object-fit: cover
+        }
+      }
       span {
         color: white;
         font-size: 40px;
@@ -122,6 +137,10 @@ export const Wrapper = styled.div`
       margin-left: 20px;
     }
   }
+
+  /* @media only screen and (max-width: 400px){
+    height: 70%;
+  }  */
 `;
 export const Overlay = styled.div`
   display: ${(props) => (props.open ? "block" : "none")};

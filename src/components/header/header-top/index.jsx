@@ -21,26 +21,26 @@ const HeaderTop = () => {
               <div className={styles.social}>
                 <p>{t("Header.0")}</p>
                 <div className={styles.social_media}>
-                  <a href="https://telegram.com">
+                  <a href="https://t.me/uniformachilonzor">
                     <img src={telegram} alt="telegram" />
                   </a>
-                  <a href="https://instagram.com">
+                  <a href="https://instagram.com/topstyle05">
                     <img src={instagram} alt="instagram" />
                   </a>
-                  <a href="https://youtube.com">
+                  {/* <a href="https://youtube.com">
                     <img src={youtube} alt="youtube" />
                   </a>
                   <a href="https://facebook.com">
                     <img src={facebook} alt="facebook" />
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </Col>
             <Col lg={6} md={6} sx={6} sm={6}>
               <div className={styles.wrapp}>
                 <div className={styles.phone_box}>
-                  <a href="tel:+998 (93) 908-70-85">+998 (93) 908-70-85</a>
-                  <a href="tel:+998 (99) 247-97-74">+998 (99) 247-97-74</a>
+                  <a href="tel:+998 (99) 322-33-35">+998 (99) 322-33-35</a>
+                  <a href="tel:+998 (99) 858-67-27">+998 (99) 858-67-27</a>
                 </div>
                 <div className={styles.lang_box}>
                   <LanguageHeader />
