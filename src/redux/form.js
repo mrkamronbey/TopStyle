@@ -5,6 +5,9 @@ import axios from "axios";
 export const PostContact = createAsyncThunk("Form/post", async (body) => {
   return await axios.post(`${API_URL}/form`, body).then((res) => res);
 });
+export const GetContact = createAsyncThunk("Form/get", async () => {
+  return await axios.get(`${API_URL}/form`).then((response) => response.data);
+});
 
 const ContactSlice = createSlice({
   name: "Form",
@@ -13,6 +16,12 @@ const ContactSlice = createSlice({
       Error: false,
       Loading: false,
       Success: false,
+    },
+    getContact: {
+      Error: false,
+      Loading: false,
+      Success: false,
+      Data: [],
     },
   },
   extraReducers: {
@@ -28,6 +37,21 @@ const ContactSlice = createSlice({
       state.postContact.Error = true;
       state.postContact.Success = false;
       state.postContact.Loading = false;
+    },
+    [GetContact.pending]: (state, action) => {
+      state.getContact.loading = true;
+    },
+    [GetContact.fulfilled]: (state, action) => {
+      state.getContact.Error = false;
+      state.getContact.Success = true;
+      state.getContact.Loading = false;
+      state.getContact.Data = action.payload;
+    },
+    [GetContact.rejected]: (state, action) => {
+      state.getContact.Error = true;
+      state.getContact.Success = false;
+      state.getContact.Loading = false;
+      state.getContact.Data = [];
     },
   },
 });

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BigContainer } from "../../../styled-app";
 import styles from "./styled.module.css";
 import { useTranslation } from "react-i18next";
@@ -6,7 +6,8 @@ import { Row, Col } from "react-grid-system";
 import Input from "../../../common/input";
 import { Button } from "../../../common/button/styled-index";
 import { PostContact } from "../../../redux/form";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { Modal } from "antd";
 
 import Order1 from "../../../assets/order/order1.png";
 import Order2 from "../../../assets/order/order2.png";
@@ -16,7 +17,8 @@ const Orders = () => {
   const dispatch = useDispatch();
   const [name, setName] = useState(null);
   const [phone, setPhone] = useState(null);
-  // console.log(name, phone);
+  const [disableds, setDisableds] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const HandleSubmit = async (e) => {
     e.preventDefault();
@@ -27,13 +29,49 @@ const Orders = () => {
       })
     );
   };
-  console.log({
-    name: name,
-    phone_number: phone,
-  });
+
+  const contactPost = useSelector((state) => state.contact);
+
+  useEffect(() => {
+    !phone ? setDisableds(true) : setDisableds(false);
+  }, [phone]);
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
   return (
     <>
       <div className={styles.orders_section}>
+        {/* modal */}
+        <Modal
+          footer={false}
+          className="modals"
+          open={isModalOpen}
+          onOk={handleOk}
+          onCancel={handleCancel}
+        >
+          <div className="boxx">
+            {
+              contactPost.postContact.Success == true ? (
+                <p>
+                  {t("Order.19")}
+
+                  <i class="bx bxs-check-circle"></i>
+                </p>
+              ) : null
+              // <p>
+              //   {t("Order.18")} <i class="bx bx-error"></i>
+              // </p>
+            }
+          </div>
+        </Modal>
+        {/* modal */}
         <BigContainer>
           <div className={styles.row_wrap}>
             <div className={styles.choose_title}>
@@ -91,13 +129,17 @@ const Orders = () => {
                   onChange={(e) => setName(e.target.value)}
                   type="text"
                   placeholder={t("Order.13")}
+                  required
                 />
                 <Input
                   onChange={(e) => setPhone(e.target.value)}
                   type="number"
                   placeholder={t("Order.14")}
+                  required
                 />
                 <Button
+                  onClick={showModal}
+                  disabled={disableds}
                   type="submit"
                   style={{
                     background: "#03544c",

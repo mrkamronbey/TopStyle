@@ -29,7 +29,7 @@ const OurProduct = () => {
                     <h4>{t("Home.14")}</h4>
                     <p>{t("Home.15")}</p>
                     <div className={styles.our_link}>
-                      <NavLink to="#">
+                      <NavLink to="/createlogo">
                         <span>{t("Home.18")}</span>
                         <img src={Arrow} alt="" />
                       </NavLink>
@@ -43,7 +43,7 @@ const OurProduct = () => {
                     <h4>{t("Home.16")}</h4>
                     <p>{t("Home.17")}</p>
                     <div className={styles.our_link}>
-                      <NavLink to="#">
+                      <NavLink to="/order">
                         <span>{t("Home.18")}</span>
                         <img src={Arrow} alt="" />
                       </NavLink>

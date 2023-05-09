@@ -1,6 +1,6 @@
 .section {
   /* height: 300px; */
-  padding: 60px 0;
+  padding: 60px 0 0 0;
   background-image: url("../../assets//footer/footerbg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -81,6 +81,20 @@
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
+}
+.mini_footer{
+  border-top: 2px solid #fff;
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.mini_footer > p > a{
+  color: #fff;
+  margin-left: 10px;
 }
 .me_text > a {
   margin-bottom: 10px;

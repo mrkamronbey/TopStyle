@@ -1,3 +1,42 @@
-.popup__content{
-    display: none !important; 
-} 
+.popup__content {
+  display: none !important;
+}
+
+.ant-modal {
+  width: 400px !important;
+}
+.ant-modal-body > .boxx > p {
+  margin-top: 50px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #03544c;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ant-modal-body > .boxx > p > i {
+  font-size: 90px;
+  color: #03544c;
+  margin-top: 30px;
+}
+
+.anticon {
+  font-size: 25px;
+  color: #03544c;
+}
+
+@media only screen and (max-width: 375px) {
+    .ant-modal-body > .boxx > p{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .ant-modal-body > .boxx > p{
+        font-size: 15px;
+    }
+}

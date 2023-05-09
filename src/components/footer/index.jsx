@@ -74,7 +74,8 @@ const Footer = () => {
               <div className={styles.me_footer}>
                 <h4>{t("Footer.6")}</h4>
                 <p className={styles.me_text}>
-                  <a href="tel:+998 (99) 322-33-35">+998 (99) 322-33-35</a> <br />
+                  <a href="tel:+998 (99) 322-33-35">+998 (99) 322-33-35</a>{" "}
+                  <br />
                   <a href="tel:+998 (99) 858-67-27">+998 (99) 858-67-27</a>
                 </p>
                 <h4>{t("Footer.7")}</h4>
@@ -89,6 +90,12 @@ const Footer = () => {
               </div>
             </Col>
           </Row>
+          <div className={styles.mini_footer}>
+            <p>
+              Разработана командой
+              <a href="https://supersite.uz/">Supersite.uz</a>
+            </p>
+          </div>
         </WrapperContainer>
       </div>
     </>

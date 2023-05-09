@@ -1,13 +1,14 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./styled.module.css";
 import { useTranslation } from "react-i18next";
 import Input from "../../../common/input";
 import { Button } from "../../../common/button/styled-index";
 import Call from "../../../assets/footer/calling.png";
 import User from "../../../assets/footer/user.png";
+import { Modal } from "antd";
+import { useDispatch, useSelector } from "react-redux";
 import "./style.css";
-import { PostContact } from "../../../redux/form";
-import { useDispatch } from "react-redux";
+import { PostContact, GetContact } from "../../../redux/form";
 
 const Location = () => {
   const dispatch = useDispatch();
@@ -16,6 +17,21 @@ const Location = () => {
   const [phone, setPhone] = useState("");
   const [nameDesktop, setNameDesktop] = useState("");
   const [phoneDesktop, setPhoneDesktop] = useState("");
+  const [disableds, setDisableds] = useState(true);
+  const [disabledDesk, setDisabledDesk] = useState(true);
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const contactPost = useSelector((state) => state.contact);
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
 
   const HandleSubmitPhone = async (e) => {
     e.preventDefault();
@@ -25,6 +41,7 @@ const Location = () => {
         phone_number: phone,
       })
     );
+    dispatch(GetContact());
   };
   const HandleSubmitDesktop = async (e) => {
     e.preventDefault();
@@ -32,13 +49,50 @@ const Location = () => {
       name: nameDesktop,
       phone_number: phoneDesktop,
     };
-    console.log("ok")
     await dispatch(PostContact(body));
+    dispatch(GetContact());
   };
+
+  useEffect(() => {
+    phoneDesktop.length == 0 ? setDisableds(true) : setDisableds(false);
+  }, [phoneDesktop]);
+  useEffect(() => {
+    phone.length == 0 ? setDisabledDesk(true) : setDisabledDesk(false);
+  }, [phone]);
+  // if(contactPost.postContact.Success == true) {
+  //   setName('')
+  //   setNameDesktop('')
+  //   setPhone('')
+  //   setPhoneDesktop('')
+  // }
 
   return (
     <>
       <div className={styles.location_wrapper}>
+        {/* modal */}
+        <Modal
+          footer={false}
+          className="modals"
+          open={isModalOpen}
+          onOk={handleOk}
+          onCancel={handleCancel}
+        >
+          <div className="boxx">
+            {
+              contactPost.postContact.Success == true ? (
+                <p>
+                  {t("Order.19")}
+
+                  <i class="bx bxs-check-circle"></i>
+                </p>
+              ) : null
+              // <p>
+              //   {t("Order.18")} <i class="bx bx-error"></i>
+              // </p>
+            }
+          </div>
+        </Modal>
+        {/* modal */}
         <div className={styles.none_form}>
           <div className={styles.position_boxs}>
             <div className={styles.from_wrapper}>
@@ -50,6 +104,7 @@ const Location = () => {
                   icon={
                     <img className={styles.input_img} src={User} alt="User" />
                   }
+                  required
                   styleInput={{
                     border: "none",
                     padding: "11px 10px 11px 35px",
@@ -64,6 +119,7 @@ const Location = () => {
                   icon={
                     <img className={styles.input_img} src={Call} alt="Call" />
                   }
+                  required
                   placeholder={t("Footer.13")}
                   type="number"
                   styleInput={{
@@ -77,6 +133,8 @@ const Location = () => {
                 />
 
                 <Button
+                  onClick={showModal}
+                  disabled={disabledDesk}
                   style={{
                     background: "#03544c",
                     borderRadius: "30px",
@@ -87,6 +145,7 @@ const Location = () => {
                     fontWeight: "400",
                     fontSize: "16px",
                     marginTop: "20px",
+                    width: "100%",
                   }}
                   type="submit"
                 >
@@ -106,6 +165,7 @@ const Location = () => {
                 icon={
                   <img className={styles.input_img} src={User} alt="User" />
                 }
+                required
                 styleInput={{
                   border: "none",
                   padding: "11px 10px 11px 35px",
@@ -121,6 +181,7 @@ const Location = () => {
                   <img className={styles.input_img} src={Call} alt="Call" />
                 }
                 placeholder={t("Footer.13")}
+                required
                 type="number"
                 styleInput={{
                   padding: "11px 10px 11px 35px",
@@ -131,7 +192,10 @@ const Location = () => {
                   color: "#FFFFFF",
                 }}
               />
+
               <Button
+                onClick={showModal}
+                disabled={disableds}
                 type="submit"
                 style={{
                   width: "100%",
@@ -151,8 +215,9 @@ const Location = () => {
             </form>
           </div>
         </div>
+
         <iframe
-          src="https://yandex.uz/map-widget/v1/?ll=69.279737%2C41.311151&mode=search&sll=69.279737%2C41.311151&sspn=0.302811%2C0.133314&text=7days&z=12"
+          src="https://yandex.uz/map-widget/v1/?ll=69.329783%2C41.415396&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgo0NTkyNDA1MTgzEjBPyrt6YmVraXN0b24sIFRvc2hrZW50IHR1bWFuaSwgT3EgdXkga28nY2hhc2ksIDkiCg3JqIpCFWKpJUI%2C&z=15.39"
           width="100%"
           height="550"
           frameborder="1"
@@ -182,7 +247,7 @@ const Location = () => {
                 fontSize: "16px",
                 color: "#fff",
               }}
-              href="https://yandex.uz/maps/10335/tashkent/search/7days/?ll=69.279737%2C41.311151&sll=69.279737%2C41.311151&sspn=0.302811%2C0.133314&z=12"
+              href="https://yandex.uz/map-widget/v1/?ll=69.329783%2C41.415396&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgo0NTkyNDA1MTgzEjBPyrt6YmVraXN0b24sIFRvc2hrZW50IHR1bWFuaSwgT3EgdXkga28nY2hhc2ksIDkiCg3JqIpCFWKpJUI%2C&z=15.39"
             >
               {t("Footer.15")}
             </a>
