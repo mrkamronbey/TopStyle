@@ -4,9 +4,9 @@ import { BigContainer } from "../../../styled-app";
 import { Row, Col } from "react-grid-system";
 import { useTranslation } from "react-i18next";
 
-import LogoCard5 from "../../../assets/partner/logocard4.png";
-import LogoCard6 from "../../../assets/partner/logocard5.png";
-import LogoCard7 from "../../../assets/partner/logocard6.png";
+import LogoCard1 from "../../../assets/contact/1.png";
+import LogoCard2 from "../../../assets/contact/2.png";
+import LogoCard3 from "../../../assets/contact/3.png";
 
 const ExampleWork = () => {
   const { t } = useTranslation();
@@ -21,17 +21,17 @@ const ExampleWork = () => {
           <Row className={styles.row}>
             <Col className={styles.col} lg={4} md={6} sm={12} sx={12}>
               <div className={styles.example_card}>
-                <img src={LogoCard5} alt="" />
+                <img src={LogoCard1} alt="" />
               </div>
             </Col>
             <Col className={styles.col} lg={4} md={6} sm={12} sx={12}>
               <div className={styles.example_card}>
-                <img src={LogoCard6} alt="" />
+                <img src={LogoCard2} alt="" />
               </div>
             </Col>
             <Col className={styles.col} lg={4} md={6} sm={12} sx={12}>
               <div className={styles.example_card}>
-                <img src={LogoCard7} alt="" />
+                <img src={LogoCard3} alt="" />
               </div>
             </Col>
           </Row>

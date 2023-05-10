@@ -33,7 +33,7 @@ const Orders = () => {
   const contactPost = useSelector((state) => state.contact);
 
   useEffect(() => {
-    !phone ? setDisableds(true) : setDisableds(false);
+    !phone || !name ? setDisableds(true) : setDisableds(false);
   }, [phone]);
 
   const showModal = () => {
@@ -44,6 +44,10 @@ const Orders = () => {
   };
   const handleCancel = () => {
     setIsModalOpen(false);
+  };
+
+  const LangVal = () => {
+    return window.localStorage.getItem("i18nextLng");
   };
   return (
     <>
@@ -57,18 +61,13 @@ const Orders = () => {
           onCancel={handleCancel}
         >
           <div className="boxx">
-            {
-              contactPost.postContact.Success == true ? (
-                <p>
-                  {t("Order.19")}
+            {contactPost.postContact.Success == true ? (
+              <p>
+                {t("Order.19")}
 
-                  <i class="bx bxs-check-circle"></i>
-                </p>
-              ) : null
-              // <p>
-              //   {t("Order.18")} <i class="bx bx-error"></i>
-              // </p>
-            }
+                <i class="bx bxs-check-circle bx-burst"></i>
+              </p>
+            ) : null}
           </div>
         </Modal>
         {/* modal */}
@@ -137,6 +136,7 @@ const Orders = () => {
                   placeholder={t("Order.14")}
                   required
                 />
+
                 <Button
                   onClick={showModal}
                   disabled={disableds}

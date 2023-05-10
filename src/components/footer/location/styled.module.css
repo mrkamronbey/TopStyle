@@ -34,6 +34,10 @@
   width: 300px;
   padding: 20px;
 }
+
+.form > p{
+  color: rgb(184, 5, 5);
+}
 .form_title {
   font-family: "Rubik";
   font-style: normal;

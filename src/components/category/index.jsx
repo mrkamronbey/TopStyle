@@ -12,7 +12,7 @@ const Category = () => {
   const { t } = useTranslation();
   const dispatch = useDispatch();
   const categoryGets = useSelector((state) => state.category.categoryGet.data);
-  console.log(categoryGets);
+
   useEffect(() => {
     dispatch(CategoryGet());
   }, []);
@@ -30,7 +30,7 @@ const Category = () => {
         <ul className={styles.category_list}>
           {categoryGets.map((elem) => (
             <li>
-              <NavLink className={styles.drop_link} to={`/products`}>
+              <NavLink className={styles.drop_link} to={`/products/${elem.id}`}>
                 <img src={Icons} alt="Icons" />
                 <span>
                   {LangVal() == "ru"

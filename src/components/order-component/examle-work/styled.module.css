@@ -49,17 +49,18 @@
 }
 
 .example_card {
-    height: 100%;
-    width: 100%;
-  /* background: #ffffff; */
-  /* border: 1px solid #eeeeee; */
+  height: 300px;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
   border-radius: 15px;
+  overflow: hidden;
   /* margin-bottom: 20px; */
 }
 
-.example_card img{
-    width: 100%;
-    height: 100%;
+.example_card img {
+  width: 100%;
+  height: 100%;
 }
 
 @media only screen and (max-width: 1090px) {
@@ -77,4 +78,3 @@
     background-image: none !important;
   }
 }
-

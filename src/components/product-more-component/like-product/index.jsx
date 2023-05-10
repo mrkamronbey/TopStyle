@@ -1,6 +1,6 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./styled.module.css";
 import Slider from "react-slick";
 import "./style.css";
@@ -13,14 +13,27 @@ import sliderImg3 from "../../../assets/home/popularpor3.png";
 import sliderImg4 from "../../../assets/home/popularpor4.png";
 import { cardData } from "./data";
 import { NavLink } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { ProductGet } from "../../../redux/product";
 
 const LikeProduct = () => {
   const { t } = useTranslation();
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(ProductGet());
+  }, []);
+  const productGets = useSelector((state) => state.product.productGet?.data);
+
+  const LangVal = () => {
+    return window.localStorage.getItem("i18nextLng");
+  };
+
   const settings = {
     dots: false,
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     speed: 2500,
     autoplay: true,
     autoplaySpeed: 2500,
@@ -62,7 +75,7 @@ const LikeProduct = () => {
                 <div className={styles.line}></div>
               </div>
               <Slider {...settings}>
-                {cardData.map((elem) => (
+                {productGets.map((elem) => (
                   <div>
                     <NavLink
                       className={styles.params_link}
@@ -70,10 +83,16 @@ const LikeProduct = () => {
                     >
                       <img
                         className={styles.slider_img}
-                        src={sliderImg1}
+                        src={elem.images.slice(0, 1).map((imgs) => imgs.image)}
                         alt=""
                       />
-                      <h4>{elem.title}</h4>
+                      <h4>
+                        {LangVal() == "ru"
+                          ? elem.title_ru
+                          : LangVal() == "uz"
+                          ? elem.title_uz
+                          : elem.title_ru}
+                      </h4>
                     </NavLink>
                   </div>
                 ))}

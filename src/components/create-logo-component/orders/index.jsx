@@ -35,7 +35,9 @@ const Orders = () => {
   const contactPost = useSelector((state) => state.contact);
 
   useEffect(() => {
-    phone.length == 0 ? setDisableds(true) : setDisableds(false);
+    phone.length == 0 || name.length == 2
+      ? setDisableds(true)
+      : setDisableds(false);
   }, [phone]);
 
   const showModal = () => {
@@ -59,18 +61,13 @@ const Orders = () => {
           onCancel={handleCancel}
         >
           <div className="boxx">
-            {
-              contactPost.postContact.Success == true ? (
-                <p>
-                  {t("Order.19")}
+            {contactPost.postContact.Success == true ? (
+              <p>
+                {t("Order.19")}
 
-                  <i class="bx bxs-check-circle"></i>
-                </p>
-              ) : null
-              // <p>
-              //   {t("Order.18")} <i class="bx bx-error"></i>
-              // </p>
-            }
+                <i class="bx bxs-check-circle bx-burst"></i>
+              </p>
+            ) : null}
           </div>
         </Modal>
         {/* modal */}

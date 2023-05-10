@@ -39,7 +39,7 @@ const ChooseUs = () => {
                     </div>
                     <div className={styles.card_content}>
                       <h4>{t("Home.9")}</h4>
-                      <p>{t("Home.8")}</p>
+                      <p>{t("Home.19")}</p>
                     </div>
                   </div>
                 </Col>
@@ -50,7 +50,7 @@ const ChooseUs = () => {
                     </div>
                     <div className={styles.card_content}>
                       <h4>{t("Home.10")}</h4>
-                      <p>{t("Home.8")}</p>
+                      <p>{t("Home.21")}</p>
                     </div>
                   </div>
                 </Col>
@@ -61,7 +61,7 @@ const ChooseUs = () => {
                     </div>
                     <div className={styles.card_content}>
                       <h4>{t("Home.11")}</h4>
-                      <p>{t("Home.8")}</p>
+                      <p>{t("Home.20")}</p>
                     </div>
                   </div>
                 </Col>

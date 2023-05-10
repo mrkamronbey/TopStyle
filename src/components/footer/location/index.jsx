@@ -17,6 +17,7 @@ const Location = () => {
   const [phone, setPhone] = useState("");
   const [nameDesktop, setNameDesktop] = useState("");
   const [phoneDesktop, setPhoneDesktop] = useState("");
+
   const [disableds, setDisableds] = useState(true);
   const [disabledDesk, setDisabledDesk] = useState(true);
 
@@ -51,13 +52,19 @@ const Location = () => {
     };
     await dispatch(PostContact(body));
     dispatch(GetContact());
+    name.target.value = "";
+    nameDesktop.target.value = "";
   };
 
   useEffect(() => {
-    phoneDesktop.length == 0 ? setDisableds(true) : setDisableds(false);
+    phoneDesktop.length == 0 || nameDesktop.length == 2
+      ? setDisableds(true)
+      : setDisableds(false);
   }, [phoneDesktop]);
   useEffect(() => {
-    phone.length == 0 ? setDisabledDesk(true) : setDisabledDesk(false);
+    phone.length == 0 || name.length == 2
+      ? setDisabledDesk(true)
+      : setDisabledDesk(false);
   }, [phone]);
   // if(contactPost.postContact.Success == true) {
   //   setName('')
@@ -65,6 +72,10 @@ const Location = () => {
   //   setPhone('')
   //   setPhoneDesktop('')
   // }
+
+  const LangVal = () => {
+    return window.localStorage.getItem("i18nextLng");
+  };
 
   return (
     <>
@@ -78,18 +89,13 @@ const Location = () => {
           onCancel={handleCancel}
         >
           <div className="boxx">
-            {
-              contactPost.postContact.Success == true ? (
-                <p>
-                  {t("Order.19")}
+            {contactPost.postContact.Success == true ? (
+              <p>
+                {t("Order.19")}
 
-                  <i class="bx bxs-check-circle"></i>
-                </p>
-              ) : null
-              // <p>
-              //   {t("Order.18")} <i class="bx bx-error"></i>
-              // </p>
-            }
+                <i class="bx bxs-check-circle bx-burst"></i>
+              </p>
+            ) : null}
           </div>
         </Modal>
         {/* modal */}
@@ -131,6 +137,17 @@ const Location = () => {
                     color: "#FFFFFF",
                   }}
                 />
+                {name.length == 2 ? (
+                  LangVal() == "ru" ? (
+                    <p>Ваше имя должно состоять из 3 и более символов</p>
+                  ) : LangVal() == "uz" ? (
+                    <p>
+                      Ismingiz 3 va undan ortiq belgidan iborat bo'lishi kerak
+                    </p>
+                  ) : (
+                    <p>Ваше имя должно состоять из 3 и более символов</p>
+                  )
+                ) : null}
 
                 <Button
                   onClick={showModal}
@@ -192,6 +209,17 @@ const Location = () => {
                   color: "#FFFFFF",
                 }}
               />
+              {nameDesktop.length == 2 ? (
+                LangVal() == "ru" ? (
+                  <p>Ваше имя должно состоять из 3 и более символов</p>
+                ) : LangVal() == "uz" ? (
+                  <p>
+                    Ismingiz 3 va undan ortiq belgidan iborat bo'lishi kerak
+                  </p>
+                ) : (
+                  <p>Ваше имя должно состоять из 3 и более символов</p>
+                )
+              ) : null}
 
               <Button
                 onClick={showModal}
