@@ -24,7 +24,7 @@ const PopularProduct = () => {
   const categoryGets = useSelector((state) => state.category.categoryGet.data);
   const filterCategory = productGets.filter((elem) => elem.category.id == id);
   console.log(
-    filterCategory.map((product) => product.images)
+    filterCategory.map((product) => product.category.category_name_ru)
     // productGets.filter(elem => elem.category.id == id)
   );
   const LangVal = () => {
@@ -37,7 +37,16 @@ const PopularProduct = () => {
         <BigContainer>
           <div className={styles.row_wrap}>
             <div className={styles.choose_title}>
-              <h2>{t("Products.0")}</h2>
+              {filterCategory.map((e) => (
+                <h2>
+                  {LangVal() == "ru"
+                    ? e.category.category_name_ru
+                    : LangVal() == "uz"
+                    ? e.category.category_name_uz
+                    : e.category.category_name_ru}
+                </h2>
+              ))}
+
               <div className={styles.line}></div>
             </div>
             <Row className={styles.row}>
@@ -48,7 +57,12 @@ const PopularProduct = () => {
                       className={styles.params_link}
                       to={`/productmore/${product.id}`}
                     >
-                      <img src={product.images.slice(0,1).map(imgs => imgs.image)} alt="" />
+                      <img
+                        src={product.images
+                          .slice(0, 1)
+                          .map((imgs) => imgs.image)}
+                        alt=""
+                      />
                       <h4>
                         {LangVal() == "ru"
                           ? product.title_ru

@@ -23,7 +23,7 @@ const ProductHome = () => {
             <Row className={styles.row}>
               <Col className={styles.col} lg={3} md={6} sm={12} sx={12}>
                 <div className={styles.product_wrapper}>
-                  <NavLink className={styles.links} to="/products">
+                  <NavLink className={styles.links} to="/products/6">
                     {t("Home.0")}
                   </NavLink>
                   <img src={Product5} alt="" />
@@ -31,7 +31,7 @@ const ProductHome = () => {
               </Col>
               <Col className={styles.col} lg={3} md={6} sm={12} sx={12}>
                 <div className={styles.product_wrapper}>
-                  <NavLink className={styles.links} to="/products">
+                  <NavLink className={styles.links} to="/products/9">
                     {t("Home.1")}
                   </NavLink>
                   <img src={Product1} width="200px" alt="" />
@@ -39,7 +39,7 @@ const ProductHome = () => {
               </Col>
               <Col className={styles.col} lg={6} md={6} sm={12} sx={12}>
                 <div className={styles.product_wrapper}>
-                  <NavLink className={styles.links} to="/products">
+                  <NavLink className={styles.links} to="/products/10">
                     {t("Home.2")}
                   </NavLink>
                   <img src={Product2} alt="" />
@@ -47,7 +47,7 @@ const ProductHome = () => {
               </Col>
               <Col className={styles.col} lg={6} md={6} sm={12} sx={12}>
                 <div className={styles.product_wrapper}>
-                  <NavLink className={styles.links} to="/products">
+                  <NavLink className={styles.links} to="/products/11">
                     {t("Home.3")}
                   </NavLink>
                   <img src={Product3} width="200px" alt="" />
@@ -55,7 +55,7 @@ const ProductHome = () => {
               </Col>
               <Col className={styles.col} lg={3} md={6} sm={12} sx={12}>
                 <div className={styles.product_wrapper}>
-                  <NavLink className={styles.links} to="/products">
+                  <NavLink className={styles.links} to="/products/7">
                     {t("Home.4")}
                   </NavLink>
                   <img src={Product4} width="200px" alt="" />
@@ -63,7 +63,7 @@ const ProductHome = () => {
               </Col>
               <Col className={styles.col} lg={3} md={6} sm={12} sx={12}>
                 <div className={styles.product_wrapper}>
-                  <NavLink className={styles.links} to="/products">
+                  <NavLink className={styles.links} to="/products/8">
                     {t("Home.5")}
                   </NavLink>
                   <img src={Product} width="200px" alt="" />

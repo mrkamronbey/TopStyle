@@ -53,7 +53,7 @@
   border: 1px solid #eeeeee;
   border-radius: 15px;
   margin-bottom: 20px;
-  height: 300px;
+  height: 100%;
 }
 
 .params_link {
@@ -105,7 +105,7 @@
     border: 1px solid #eeeeee;
     border-radius: 15px;
     margin-bottom: 20px;
-    height: 300px;
+    height: 100%;
   }
 }
 @media only screen and (max-width: 991px) {
