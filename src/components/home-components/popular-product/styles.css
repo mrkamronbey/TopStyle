@@ -1,0 +1,5 @@
+@media only screen and (max-width: 991px) {
+  .col {
+    margin-bottom: 30px !important;
+  }
+}

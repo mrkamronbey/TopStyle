@@ -92,6 +92,17 @@
     width: 80%;
   }
 }
+@media only screen and (max-width: 991px) {
+  .col {
+    margin-bottom: 30px;
+  }
+  .product_card{
+    height: 100%;
+  }
+  .params_link > img{
+    height: 100%;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .popular_section {

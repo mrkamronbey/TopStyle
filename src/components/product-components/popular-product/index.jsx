@@ -42,7 +42,7 @@ const PopularProduct = () => {
             </div>
             <Row className={styles.row}>
               {filterCategory.map((product) => (
-                <Col lg={4} md={6} sm={12} sx={12}>
+                <Col className={styles.col} lg={4} md={6} sm={12} sx={12}>
                   <div className={styles.product_card}>
                     <NavLink
                       className={styles.params_link}

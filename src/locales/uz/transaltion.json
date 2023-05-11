@@ -28,13 +28,13 @@
     "7": "Manzilimiz:",
     "8": "Uchtepa tumani 13-kvartal 3A uy",
     "9": "Ish vaqtimiz:",
-    "10": "09:00-18:00 (Dushanba-Juma)",
+    "10": "09:00-18:00 (Dushanba-Shanba)",
     "11": "Buyurtma qoldirish",
     "12": "Ismingizni qoldiring",
     "13": "Telefon raqamingiz",
     "14": "Buyurtma qoldirish",
     "15": "Karta orqali ochish",
-    "16": "Dam olish kunlari (Shanba-Yakshanba)" 
+    "16": "Dam olish kunlari (Yakshanba)" 
   },
   "Home": {
     "0": "Qishki kiyimlar  >",
@@ -48,7 +48,7 @@
     "8": "O’zingizga kerak bo’ladigan barcha mahsulotlarni barchasini bir joydan topa olasiz!",
     "9": "Eng yaxshi narxlar",
     "10": "Tezkor yetkazib berish",
-    "11": "Mutaxassislik",
+    "11": "Ekspertiza",
     "12": "Mashhur mahsulotlar",
     "13": "Bizning mahsulotlar",
     "14": "Mahsulotlarga logotip tushirish",
@@ -111,10 +111,10 @@
     "1": "Biz ijtimoy tarmoqlarda",
     "2": "Telefon raqamlarimiz",
     "3": "Ish vaqtimiz",
-    "4": "Dam olish kunlari (Shanba-Yakshanba)",
+    "4": "Dam olish kunlari (Yakshanba)",
     "5": "Manzilimiz",
     "6": "Uchtepa tumani 13-kvartal 3A uy",
-    "7": "09:00-18:00 (Dushanba-Juma)"
+    "7": "09:00-18:00 (Dushanba-Shanba)"
   },
   "About": {
     "0": "Kompaniyamiz haqida",

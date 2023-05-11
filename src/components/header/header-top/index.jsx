@@ -39,7 +39,7 @@ const HeaderTop = () => {
             <Col lg={6} md={6} sx={6} sm={6}>
               <div className={styles.wrapp}>
                 <div className={styles.phone_box}>
-                  <a href="tel:+998 (99) 322-33-35">+998 (99) 322-33-35</a>
+                  <a href="tel:+998 (99) 822-33-35">+998 (99) 822-33-35</a>
                   <a href="tel:+998 (99) 858-67-27">+998 (99) 858-67-27</a>
                 </div>
                 <div className={styles.lang_box}>

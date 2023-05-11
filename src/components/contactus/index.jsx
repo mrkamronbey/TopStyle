@@ -33,10 +33,10 @@ const ContactUs = () => {
                   <p>
                     <a
                       className={styles.contact_link}
-                      href="tel:+998 (99) 322-33-35"
+                      href="tel:+998 (99) 3822-33-35"
                     >
                       <img src={contact1} alt="" />
-                      <span>+998 (99) 322-33-35</span>
+                      <span>+998 (99) 822-33-35</span>
                     </a>
                   </p>
                   <p>

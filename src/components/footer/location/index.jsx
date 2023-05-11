@@ -244,8 +244,10 @@ const Location = () => {
           </div>
         </div>
 
+        
+
         <iframe
-          src="https://yandex.uz/map-widget/v1/?ll=69.329783%2C41.415396&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgo0NTkyNDA1MTgzEjBPyrt6YmVraXN0b24sIFRvc2hrZW50IHR1bWFuaSwgT3EgdXkga28nY2hhc2ksIDkiCg3JqIpCFWKpJUI%2C&z=15.39"
+          src="https://yandex.uz/map-widget/v1/?ll=69.183620%2C41.288647&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTIyNTQ1MjQ3EkZPyrt6YmVraXN0b24sIFRvc2hrZW50LCBVY2h0ZXBhIHR1bWFuaSwgQ2hpbG9uem9yIGRhaGFzaSwgMTMtbWF2emUsIDNBIgoNCl6KQhV-JyVC&z=18.86"
           width="100%"
           height="550"
           frameborder="1"
@@ -275,7 +277,7 @@ const Location = () => {
                 fontSize: "16px",
                 color: "#fff",
               }}
-              href="https://yandex.uz/map-widget/v1/?ll=69.329783%2C41.415396&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgo0NTkyNDA1MTgzEjBPyrt6YmVraXN0b24sIFRvc2hrZW50IHR1bWFuaSwgT3EgdXkga28nY2hhc2ksIDkiCg3JqIpCFWKpJUI%2C&z=15.39"
+              href="https://yandex.uz/map-widget/v1/?ll=69.183620%2C41.288647&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTIyNTQ1MjQ3EkZPyrt6YmVraXN0b24sIFRvc2hrZW50LCBVY2h0ZXBhIHR1bWFuaSwgQ2hpbG9uem9yIGRhaGFzaSwgMTMtbWF2emUsIDNBIgoNCl6KQhV-JyVC&z=18.86"
             >
               {t("Footer.15")}
             </a>

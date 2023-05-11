@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 
 import LogoCard1 from "../../../assets/contact/1.png";
 import LogoCard2 from "../../../assets/contact/2.png";
-import LogoCard3 from "../../../assets/contact/3.png";
+import LogoCard3 from "../../../assets/contact/3.jpg";
 
 const ExampleWork = () => {
   const { t } = useTranslation();

@@ -36,7 +36,7 @@ function HeaderBottom({ HandleOpen2 }) {
   categoryGets.map((elem) =>
     items.push({
       label: (
-        <NavLink className={styles.drop_link} to={`/products`}>
+        <NavLink className={styles.drop_link} to={`/products/${elem.id}`}>
           <img src={Icons} alt="Icons" />
           <span>
             {LangVal() == "ru"

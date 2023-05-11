@@ -74,7 +74,7 @@ const Footer = () => {
               <div className={styles.me_footer}>
                 <h4>{t("Footer.6")}</h4>
                 <p className={styles.me_text}>
-                  <a href="tel:+998 (99) 322-33-35">+998 (99) 322-33-35</a>{" "}
+                  <a href="tel:+998 (99) 822-33-35">+998 (99) 822-33-35</a>{" "}
                   <br />
                   <a href="tel:+998 (99) 858-67-27">+998 (99) 858-67-27</a>
                 </p>

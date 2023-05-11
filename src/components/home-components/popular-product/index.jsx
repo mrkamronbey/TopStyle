@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { ProductGet } from "../../../redux/product";
+import './styles.css'
 
 const PopularProduct = () => {
   const { t } = useTranslation();
@@ -33,7 +34,7 @@ const PopularProduct = () => {
             </div>
             <Row className={styles.row}>
               {productGets.map((card) => (
-                <Col lg={4} md={6} sm={12} sx={12}>
+                <Col lg={4} md={6} sm={12} sx={12} className='col'>
                   <div className={styles.product_card}>
                     <NavLink
                       className={styles.params_link}

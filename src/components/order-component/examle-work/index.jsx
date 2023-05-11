@@ -6,9 +6,7 @@ import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { ProductGet } from "../../../redux/product";
-import Order3 from "../../../assets/order/order3.png";
-import Order4 from "../../../assets/order/order4.png";
-import Order5 from "../../../assets/order/order5.png";
+import './styles.css'
 
 const ExampleWork = () => {
   const { t } = useTranslation();
@@ -28,7 +26,7 @@ const ExampleWork = () => {
           </div>
           <Row className={styles.row}>
             {productGets.slice(0,3).map((elem) => (
-              <Col lg={4} md={6} sm={12} sx={12}>
+              <Col className="col" lg={4} md={6} sm={12} sx={12}>
                 <div className={styles.example_card}>
                   <NavLink  to={`/productmore/${elem.id}`}>
                     <img src={elem.images.slice(0, 1).map((imgs) => imgs.image)} alt="" />

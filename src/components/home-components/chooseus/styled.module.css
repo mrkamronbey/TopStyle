@@ -43,7 +43,7 @@
   margin: 0 !important;
 }
 .choose_card {
-  height: 200px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -104,6 +104,19 @@
   .line {
     width: 80%;
   }
+  .choose_card{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+@media only screen and (max-width: 991px) {
+ 
+  .choose_card{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -113,5 +126,8 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    height: auto;
   }
+
+
 }
