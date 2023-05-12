@@ -20,7 +20,7 @@ const ClientSlider = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1500,
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
@@ -74,25 +74,17 @@ const ClientSlider = () => {
                     <div className={styles.user_box}>
                       <div className={styles.user_info}>
                         <div className={styles.user_name_wrap}>
-                          <img src={Ava} alt="" />
+                          <i class="bx bxs-user-circle"></i>
                           <div className={styles.div}>
-                            <p className={styles.user_name}>Savannah Nguyen</p>
+                            <p className={styles.user_name}>{t("About.29")}</p>
                             <p className={styles.user_email}>
-                              savannahnguyen@gmail.com
+                              suratovjasur@gmail.com
                             </p>
                           </div>
                         </div>
                         <img src={social} alt="" />
                       </div>
-                      <p>
-                        Sagittis sed tortor, elementum vitae varius sodales
-                        consectetur. Vitae arcu ut morbi bibendum ullamcorper
-                        feugiat. Venenatis hendrerit cursus egestas sit ornare
-                        nunc vulputate aliquam sapien. Pulvinar nunc consectetur
-                        nibh consectetur mollis mauris est mauris amet. Sed hac
-                        vehicula id et dui morbi quam pulvinar condimentum.
-                        Senectus sed varius interdum nunc, arcu vulputate massa.
-                      </p>
+                      <p>{t("About.24")}</p>
                       <div className={styles.card_line}></div>
                       <div className={styles.star_wrap}>
                         <p>{t("About.23")}</p>
@@ -112,25 +104,17 @@ const ClientSlider = () => {
                     <div className={styles.user_box}>
                       <div className={styles.user_info}>
                         <div className={styles.user_name_wrap}>
-                          <img src={Ava1} alt="" />
+                          <i class="bx bxs-user-circle"></i>
                           <div className={styles.div}>
-                            <p className={styles.user_name}>Savannah Nguyen</p>
+                            <p className={styles.user_name}>{t("About.30")}</p>
                             <p className={styles.user_email}>
-                              savannahnguyen@gmail.com
+                              jumaevadilrabo@gmail.com
                             </p>
                           </div>
                         </div>
                         <img src={social} alt="" />
                       </div>
-                      <p>
-                        Sagittis sed tortor, elementum vitae varius sodales
-                        consectetur. Vitae arcu ut morbi bibendum ullamcorper
-                        feugiat. Venenatis hendrerit cursus egestas sit ornare
-                        nunc vulputate aliquam sapien. Pulvinar nunc consectetur
-                        nibh consectetur mollis mauris est mauris amet. Sed hac
-                        vehicula id et dui morbi quam pulvinar condimentum.
-                        Senectus sed varius interdum nunc, arcu vulputate massa.
-                      </p>
+                      <p>{t("About.25")}</p>
                       <div className={styles.card_line}></div>
                       <div className={styles.star_wrap}>
                         <p>{t("About.23")}</p>
@@ -150,25 +134,17 @@ const ClientSlider = () => {
                     <div className={styles.user_box}>
                       <div className={styles.user_info}>
                         <div className={styles.user_name_wrap}>
-                          <img src={Ava} alt="" />
+                          <i class="bx bxs-user-circle"></i>
                           <div className={styles.div}>
-                            <p className={styles.user_name}>Savannah Nguyen</p>
+                            <p className={styles.user_name}>{t("About.31")}</p>
                             <p className={styles.user_email}>
-                              savannahnguyen@gmail.com
+                              hoshimovakrom@gmail.com
                             </p>
                           </div>
                         </div>
                         <img src={social} alt="" />
                       </div>
-                      <p>
-                        Sagittis sed tortor, elementum vitae varius sodales
-                        consectetur. Vitae arcu ut morbi bibendum ullamcorper
-                        feugiat. Venenatis hendrerit cursus egestas sit ornare
-                        nunc vulputate aliquam sapien. Pulvinar nunc consectetur
-                        nibh consectetur mollis mauris est mauris amet. Sed hac
-                        vehicula id et dui morbi quam pulvinar condimentum.
-                        Senectus sed varius interdum nunc, arcu vulputate massa.
-                      </p>
+                      <p>{t("About.26")}</p>
                       <div className={styles.card_line}></div>
                       <div className={styles.star_wrap}>
                         <p>{t("About.23")}</p>
@@ -188,25 +164,47 @@ const ClientSlider = () => {
                     <div className={styles.user_box}>
                       <div className={styles.user_info}>
                         <div className={styles.user_name_wrap}>
-                          <img src={Ava1} alt="" />
+                          <i class="bx bxs-user-circle"></i>
                           <div className={styles.div}>
-                            <p className={styles.user_name}>Savannah Nguyen</p>
+                            <p className={styles.user_name}>{t("About.32")}</p>
                             <p className={styles.user_email}>
-                              savannahnguyen@gmail.com
+                              hakimovmuniz@gmail.com
                             </p>
                           </div>
                         </div>
                         <img src={social} alt="" />
                       </div>
-                      <p>
-                        Sagittis sed tortor, elementum vitae varius sodales
-                        consectetur. Vitae arcu ut morbi bibendum ullamcorper
-                        feugiat. Venenatis hendrerit cursus egestas sit ornare
-                        nunc vulputate aliquam sapien. Pulvinar nunc consectetur
-                        nibh consectetur mollis mauris est mauris amet. Sed hac
-                        vehicula id et dui morbi quam pulvinar condimentum.
-                        Senectus sed varius interdum nunc, arcu vulputate massa.
-                      </p>
+                      <p>{t("About.27")}</p>
+                      <div className={styles.card_line}></div>
+                      <div className={styles.star_wrap}>
+                        <p>{t("About.23")}</p>
+                        <div className={styles.star_box}>
+                          <img src={Star} alt="" />
+                          <img src={Star} alt="" />
+                          <img src={Star} alt="" />
+                          <img src={Star} alt="" />
+                          <img src={Star} alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.card_big_wrap}>
+                  <div className={styles.slider_card}>
+                    <div className={styles.user_box}>
+                      <div className={styles.user_info}>
+                        <div className={styles.user_name_wrap}>
+                          <i class="bx bxs-user-circle"></i>
+                          <div className={styles.div}>
+                            <p className={styles.user_name}>{t("About.33")}</p>
+                            <p className={styles.user_email}>
+                              sattorovasurayo@gmail.com
+                            </p>
+                          </div>
+                        </div>
+                        <img src={social} alt="" />
+                      </div>
+                      <p>{t("About.28")}</p>
                       <div className={styles.card_line}></div>
                       <div className={styles.star_wrap}>
                         <p>{t("About.23")}</p>

@@ -34,7 +34,7 @@
     "13": "Telefon raqamingiz",
     "14": "Buyurtma qoldirish",
     "15": "Karta orqali ochish",
-    "16": "Dam olish kunlari (Yakshanba)" 
+    "16": "Dam olish kunlari (Yakshanba)"
   },
   "Home": {
     "0": "Qishki kiyimlar  >",
@@ -140,6 +140,16 @@
     "20": "Kombinezonlar, poyabzallar va shaxsiy himoya vositalarining eng to'liq va zamonaviy assortimentini shakllantirish, shu jumladan to'plamlarni  zamonaviy yangiliklar bilan muntazam to'ldirish. Ishlab chiqarishning har bir bosqichida qat'iy sifat nazorati.",
     "21": "Xodimlarni sevimli ishi, umumiy manfaatlari va maqsadlari birlashtiradi. Mijozlar va hamkorlar uzoq muddatli o'zaro manfaatli hamkorlikka e'tibor qaratish. Poklik, halollik va benuqson brend obro'si.",
     "22": "Mijozlarimizning biz haqimizdagi fikrlari",
-    "23": "Yulduzli reyting:"
+    "23": "Yulduzli reyting:",
+    "24": "Biz kompaniya bilan bir necha yillardan beri hamkorlik qilib kelamiz va biz doimo mamnunmiz. Bizning formalarimizni tikish va logotiplarni qo'llashning ajoyib sifati. Tavsiya etiladi!",
+    "25": "Ish kiyimlariga logotiplarni tikish va qo'llash bo'yicha buyurtmamiz tez va professional tarzda bajarilganingiz uchun tashakkur. Natija kutganimizdan oshib ketdi!",
+    "26": "Biz kompaniyaning ish kiyimlarini tikish va unga logotiplarni qo'llash ishlaridan juda mamnunmiz. Har bir buyurtmaga ishonchli va mas'uliyat bilan yondashamiz. Biz yana bog'lanamiz",
+    "27": "Biz kompaniyamiz uchun kombinezonlarni tikish va unga logotiplarni qo'llashga buyurtma berdik. Natija kutganimizdan oshib ketdi - yuqori sifatli mahsulotlar va a'lo xizmat. Tavsiya etiladi!",
+    "28": "Ish kiyimlarini tikish va unga logotiplarni qo'llash bo'yicha kompaniya o'z ishining professional ustalaridir. Har bir buyurtma tez va sifatli bajariladi. Rahmat!",
+    "29": "Suratov Jasur",
+    "30": "Jumaeva Dilrabo",
+    "31": "Hoshimov Akrom",
+    "32": "Hakimov Muniz",
+    "33": "Sattorova Surayo"
   }
 }
