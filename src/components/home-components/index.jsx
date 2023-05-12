@@ -12,7 +12,6 @@ const HomeComponent = () => {
   return (
     <div className={styles.homecomp_wrapper}>
       <Category />
-      hello
       <News />
       <div className={styles.chooseBg}>
         <ProductHome />
