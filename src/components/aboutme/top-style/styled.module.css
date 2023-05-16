@@ -99,6 +99,7 @@
 
 .titles > h4 {
   margin: 0;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 1090px) {
   .row_wrap {

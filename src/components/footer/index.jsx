@@ -87,6 +87,12 @@ const Footer = () => {
                 <p style={{ maxWidth: "200px" }} className={styles.me_text}>
                   {t("Footer.16")}
                 </p>
+                <h4>{t("Footer.18")}</h4>
+                <p className={styles.me_text}>
+                  <a href="mailto:topstylegroup5@gmail.com">
+                    topstylegroup5@gmail.com
+                  </a>
+                </p>
               </div>
             </Col>
           </Row>

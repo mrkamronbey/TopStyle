@@ -34,7 +34,9 @@
     "13": "Telefon raqamingiz",
     "14": "Buyurtma qoldirish",
     "15": "Karta orqali ochish",
-    "16": "Dam olish kunlari (Yakshanba)"
+    "16": "Dam olish kunlari (Yakshanba)",
+    "17": "Jamoa tomonidan ishlab chiqilgan",
+    "18": "Elektron pochta"
   },
   "Home": {
     "0": "Qishki kiyimlar  >",
@@ -58,7 +60,7 @@
     "18": "Batafsil ma’lumot",
     "19": "Biz barcha mahsulotlarimiz uchun raqobatbardosh narxlarni taklif qilamiz.",
     "20": "Bizning jamoamiz har doim yordam berishga va o'z bilim va tajribalarini baham ko'rishga tayyor bo'lgan tajribali mutaxassislardan iborat.",
-    "21": "Tez va qulay yetkazib berish, bu bizning yaxshi muvofiqlashtirilgan logistika tizimimiz va professional kurerlarimiz tomonidan ta'minlanadi, buyurtmani istalgan nuqtaga yetkazib berishga tayyor."
+    "21": "Tez va qulay yetkazib berish, bu bizning yaxshi muvofiqlashtirilgan logistika tizimimiz tomonidan ta'minlanadi."
   },
   "Products": {
     "0": "Qishki mahsus kiyimlar",

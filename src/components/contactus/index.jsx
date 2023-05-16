@@ -59,6 +59,25 @@ const ContactUs = () => {
                   </p>
                 </div>
                 <div className={styles.call_box}>
+                  <h4>{t("Footer.18")}</h4>
+                  <p>
+                    {/* <a
+                      className={styles.contact_link}
+                      href="tel:+998 (99) 3822-33-35"
+                    >
+                      <img src={contact1} alt="" />
+                      <span>+998 (99) 822-33-35</span>
+                    </a> */}
+                    <a
+                      className={styles.contact_link}
+                      href="mailto:topstylegroup5@gmail.com"
+                    >
+                      <i class="bx bxl-gmail"></i>
+                      <span>topstylegroup5@gmail.com</span>
+                    </a>
+                  </p>
+                </div>
+                <div className={styles.call_box}>
                   <h4>{t("Contact.3")}</h4>
                   <p>
                     <img src={contact2} alt="" />

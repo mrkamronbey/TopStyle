@@ -97,6 +97,10 @@
 .call_box > p > img {
   margin-right: 10px;
 }
+.contact_link > i{
+  font-size: 25px;
+  margin-right: 10px;
+}
 
 @media only screen and (max-width: 1090px) {
     .row_wrap {
