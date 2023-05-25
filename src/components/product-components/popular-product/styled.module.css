@@ -8,7 +8,8 @@
 .row_wrap {
   width: 72%;
   margin-left: auto;
-  padding-bottom: 160px;
+  padding-bottom: 30px;
+  height: 450px !important;
 }
 
 .row {
@@ -88,6 +89,28 @@
   color: #000000;
 }
 
+.no_data_box {
+  width: 100%;
+  height: 56vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ant_icons{
+  font-size: 60px !important;
+}
+.no_data_box > h4{
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 19px;
+  text-align: center;
+  margin: 10px 0;
+  color: #000000;
+}
+
 @media only screen and (max-width: 1090px) {
   .row_wrap {
     width: 100%;
@@ -101,10 +124,10 @@
   .col {
     margin-bottom: 30px;
   }
-  .product_card{
+  .product_card {
     height: 100%;
   }
-  .params_link > img{
+  .params_link > img {
     height: 100%;
   }
 }
