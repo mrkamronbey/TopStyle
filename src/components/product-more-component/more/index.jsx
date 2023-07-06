@@ -27,7 +27,6 @@ const More = () => {
   }, []);
   const productGets = useSelector((state) => state.product.productGet?.data);
   const findCategory = productGets.filter((elem) => elem.id == id);
-  console.log(findCategory.map((elem) => elem.title_uz));
   const LangVal = () => {
     return window.localStorage.getItem("i18nextLng");
   };
@@ -57,7 +56,7 @@ const More = () => {
           <div className={styles.row_wrap}>
             <div className={styles.slid_wrapper}>
               <Row className={styles.row}>
-                <Col className={styles.col} lg={6} md={12} sm={12} sx={12}>
+                <Col className={styles.col} lg={5} md={12} sm={12} sx={12}>
                   <div className={styles.slider_wrapp}>
                     <Slider {...settings}>
                       {findCategory.map((elem) =>
@@ -73,7 +72,7 @@ const More = () => {
                     </Slider>
                   </div>
                 </Col>
-                <Col className={styles.col2} lg={6} md={12} sm={12} sx={12}>
+                <Col className={styles.col2} lg={7} md={12} sm={12} sx={12}>
                   {findCategory.map((elem) => (
                     <div className={styles.slider_сontent}>
                       <h3 className={styles.product_title}>

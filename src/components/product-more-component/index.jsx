@@ -1,8 +1,8 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import styles from "./styled.module.css";
 import More from "./more";
 import Category from "../category";
-import LikeProduct from "./like-product";
+import LikeProduct from './like-product/index'
 
 const ProductMoreComponent = () => {
 

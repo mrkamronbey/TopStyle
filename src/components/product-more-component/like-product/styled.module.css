@@ -1,17 +1,23 @@
+.popular_section {
+  background-image: url("../../../assets/home/line.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-position-y: 300px;
+  padding: 20px 0;
+}
 .row_wrap {
-  width: 71%;
+  width: 72%;
   margin-left: auto;
-  margin-bottom: 20px;
 }
 
-.slider_img {
-  width: 100%;
-  height: 100%;
-  /* border-radius: 10px; */
-  border-top-right-radius: 12px;
-  border-top-left-radius: 12px;
+.row {
+  margin: 0 !important;
 }
 
+.choose_title {
+  margin-left: 20px;
+}
 .choose_title h2 {
   font-family: "Rubik";
   font-style: normal;
@@ -41,6 +47,15 @@
   border-radius: 10px;
   background-color: #03544c;
 }
+
+.product_card {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  /* height: 100%; */
+}
+
 .params_link {
   height: 100%;
   text-decoration: none;
@@ -50,13 +65,21 @@
   flex-direction: column;
 }
 
+.params_link > img {
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+}
+
 .params_link h4 {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  margin: 12px 0;
   font-size: 16px;
   line-height: 19px;
+  margin: 12px 0;
   text-align: center;
   color: #000000;
 }
@@ -65,7 +88,45 @@
   .row_wrap {
     width: 100%;
   }
-  .like_slidwrap {
-    padding: 0 20px;
+
+  .line {
+    width: 80%;
+  }
+  .popular_section {
+    background-image: url("../../../assets/home/line.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-position-y: 300px;
+    padding: 20px 0;
+  }
+
+  .product_card {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .product_card {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .popular_section {
+    background-image: none !important;
+  }
+
+  .product_card {
+    height: 100%;
+  }
+  .col{
+    margin-bottom: 30px !important;
   }
 }

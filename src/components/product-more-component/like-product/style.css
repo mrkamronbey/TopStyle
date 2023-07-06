@@ -16,11 +16,20 @@
 } */
 
 /* For the demo */
+@media only screen and (max-width: 991px) {
+  .col {
+    margin-bottom: 30px !important;
+  }
+}
+
+.col {
+  margin-bottom: 20px !important;
+}
 .slick-slide div {
   width: auto;
   height: 350px !important;
   margin-right: 10px !important;
-  background: #ffffff !important;
+  /* background: #ffffff !important; */
   border: 1px solid #eeeeee !important;
   border-radius: 15px !important;
 }
