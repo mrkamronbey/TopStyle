@@ -18,6 +18,14 @@ const LikeProduct = () => {
   }, []);
 
   const productGets = useSelector((state) => state.product.productGet?.data);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0)
+  // }, [])
+
+  const handleTop = () => {
+    window.scrollTo(0, 0)
+  }
+
 
   const LangVal = () => {
     return window.localStorage.getItem("i18nextLng");
@@ -37,6 +45,7 @@ const LikeProduct = () => {
                 <Col lg={4} md={6} sm={12} sx={12} className='col'>
                   <div className={styles.product_card}>
                     <NavLink
+                      onClick={handleTop}
                       className={styles.params_link}
                       to={`/productmore/${card.id}`}
                     >
@@ -45,8 +54,8 @@ const LikeProduct = () => {
                         {LangVal() == "ru"
                           ? card.title_ru
                           : LangVal() == "uz"
-                          ? card.title_uz
-                          : card.title_ru}
+                            ? card.title_uz
+                            : card.title_ru}
                       </h4>
                     </NavLink>
                   </div>
