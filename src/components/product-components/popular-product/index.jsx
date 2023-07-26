@@ -22,9 +22,9 @@ const PopularProduct = () => {
   }, []);
 
   const productGets = useSelector((state) => state.product.productGet?.data);
-  const categoryGets = useSelector((state) => state.category.categoryGet.data);
-  const categoryFilter = categoryGets.filter(elem => elem.id == id)
-  const filterCategory = productGets.filter((elem) => elem.category.id == id);
+  const categoryGets = useSelector((state) => state.category.categoryGet?.data);
+  const categoryFilter = categoryGets.filter(elem => elem?.id == id)
+  const filterCategory = productGets.filter((elem) => elem?.category?.id == id);
   console.log(categoryFilter)
 
   const LangVal = () => {
