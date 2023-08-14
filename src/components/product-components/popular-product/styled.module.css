@@ -9,7 +9,26 @@
   width: 72%;
   margin-left: auto;
   padding-bottom: 30px;
-  height: 450px !important;
+  height: 70vh !important;
+  overflow-y: auto;
+}
+
+.row_wrap::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+}
+.row_wrap::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #5a79e5;
+  border-radius: 10px;
+}
+
+.row_wrap::-webkit-scrollbar-thumb {
+  background: #03544c;
+  border-radius: 10px;
+}
+
+.row_wrap::-webkit-scrollbar-thumb:hover {
+  background: #03544c;
 }
 
 .row {
@@ -97,10 +116,10 @@
   justify-content: center;
   flex-direction: column;
 }
-.ant_icons{
+.ant_icons {
   font-size: 60px !important;
 }
-.no_data_box > h4{
+.no_data_box > h4 {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 600;

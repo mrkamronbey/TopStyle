@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { ProductGet } from "../../../redux/product";
 import { CategoryGet } from "../../../redux/category";
 import { InboxOutlined } from "@ant-design/icons";
+import { height } from "@mui/system";
 
 const PopularProduct = () => {
   const { id } = useParams();
@@ -44,8 +45,8 @@ const PopularProduct = () => {
                       {LangVal() == "ru"
                         ? e.category_name_ru
                         : LangVal() == "uz"
-                        ? e.category_name_uz
-                        : e.category_name_ru}
+                          ? e.category_name_uz
+                          : e.category_name_ru}
                     </h2>
                   ))}
 
@@ -69,8 +70,8 @@ const PopularProduct = () => {
                             {LangVal() == "ru"
                               ? product.title_ru
                               : LangVal() == "uz"
-                              ? product.title_uz
-                              : product.title_ru}
+                                ? product.title_uz
+                                : product.title_ru}
                           </h4>
                         </NavLink>
                       </div>
